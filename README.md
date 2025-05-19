@@ -1,16 +1,44 @@
-## Hi there 👋
+Hello, I'm Brandon.
 
-<!--
-**localastronaut/localastronaut** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I’m an interdisciplinary artist working across **film, sound, design, and systems**—exploring how ideas become real through experience, storytelling, and structure. From creating immersive art installations to engineering autonomous tools, my work lives at the intersection of **culture, technology, and design**.
 
-Here are some ideas to get you started:
+This page is a curated signal—a nonlinear transmission of projects shaped by travel, intuition, and lived experience.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Core Areas of Work
+
+- **Experience Design** — Art that can be felt, walked through, remembered
+- **Creative Systems** — Tools that empower people through structure and intuition
+- **Visual Identity** — Brand, film, and photographic storytelling
+- **Sonic Architecture** — Psych-folk loops, ambient scores, and cultural field recordings
+
+## Current Projects
+
+- [Coyote Radio](./projects/coyote-radio.html) — A psych-folk performance and desert-rooted media project
+- [Crystal Nights](./projects/crystal-nights.html) — Lo-fi sonic storytelling and immersive live sets
+- [Expedition Provisions](./projects/expedition-provisions.html) — A narrative-driven surf and adventure brand rooted in analog aesthetics and place-based storytelling  
+
+
+
+## Past Projects
+
+- [PerDiem](./projects/perdiem.html) — A pre-NFT creator investment platform, featured at SXSW
+- [Senses of Sound](./projects/senses-of-sound.html) — A multisensory installation exploring physical sound
+- [Red Bull Records](./projects/red-bull-records.html) — Branding and digital campaigns for platinum-certified artists
+- [Mind The Music](./projects/mindthemusic.html) — Underground experiental music events
+- [ExCollectives](./projects/excollectives.html) — AI-driven health tech tools and ambient interfaces
+
+## Technologies & Tools
+
+- Music: Ableton Live, Fender Telecaster, Deluxe Reverb
+- Design: Adobe Suite, Affinity Suite
+- Film: DaVinci Resolve, Final Cut
+- Python / Xcode / Swift / React Native
+- Web Dev: HTML / CSS / JS
+
+## Philosophy
+
+> I create by tuning into the frequency of the world around me.
+> Whether it’s a song, a system, or a story—my goal is to build things that feel honest, carry meaning, and make a positive impact.
+
+## 📍 Currently in: San Diego, CA  
+- Portfolio Site: [localastronaut.github.io/portfolio](https://localastronaut.github.io/portfolio)  
