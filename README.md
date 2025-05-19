@@ -5,18 +5,18 @@ I’m an interdisciplinary artist working across **film, sound, design, and syst
 ## Current Projects
 
 - [Coyote Radio](./projects/coyote-radio.html) — A psych-folk performance and desert-rooted media project
-- [Crystal Nights](./projects/crystal-nights.html) — Lo-fi sonic storytelling and immersive live sets
-- [Expedition Provisions](./projects/expedition-provisions.html) — A narrative-driven surf and adventure brand rooted in analog aesthetics and place-based storytelling  
+- [Crystal Nights](https://open.spotify.com/artist/4sctVpFNSpAohYYzCJWS4Y?si=tVOX5OLjTvmpoGrMYdhv9g) — Lo-fi sonic storytelling and immersive live sets
+- [Expedition Provisions](https://exprovisions.com) — A narrative-driven surf and adventure brand rooted in analog aesthetics and place-based storytelling  
 
 
 
 ## Past Projects
 
-- [PerDiem](./projects/perdiem.html) — A pre-NFT creator investment platform, featured at SXSW
+- [PerDiem](https://localastronaut.github.io/portfolio/project-perdiem.html) — A pre-NFT creator investment platform, featured at SXSW
 - [Senses of Sound](./projects/senses-of-sound.html) — A multisensory installation exploring physical sound
-- [Red Bull Records](./projects/red-bull-records.html) — Branding and digital campaigns for platinum-certified artists
-- [Mind The Music](./projects/mindthemusic.html) — Underground experiental music events
-- [ExCollectives](./projects/excollectives.html) — AI-driven health tech tools and ambient interfaces
+- [Red Bull Records](https://localastronaut.github.io/portfolio/project-redbullrecords.html) — Branding and digital campaigns for platinum-certified artists
+- [Mind The Music]([./projects/mindthemusic.html](https://localastronaut.github.io/portfolio/project-redbull.html)) — Underground experiental music events
+- [ExCollectives](https://localastronaut.github.io/portfolio/project-excollectives.html) — AI-driven health tech tools and ambient interfaces
 
 
 ## Philosophy
