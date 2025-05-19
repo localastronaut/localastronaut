@@ -18,13 +18,6 @@ I’m an interdisciplinary artist working across **film, sound, design, and syst
 - [Mind The Music](./projects/mindthemusic.html) — Underground experiental music events
 - [ExCollectives](./projects/excollectives.html) — AI-driven health tech tools and ambient interfaces
 
-## Technologies & Tools
-
-- Music: Ableton Live, Fender Telecaster, Deluxe Reverb
-- Design: Adobe Suite, Affinity Suite
-- Film: DaVinci Resolve, Final Cut
-- Python / Xcode / Swift / React Native
-- Web Dev: HTML / CSS / JS
 
 ## Philosophy
 
