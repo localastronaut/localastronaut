@@ -2,15 +2,6 @@ Hello, I'm Brandon.
 
 I’m an interdisciplinary artist working across **film, sound, design, and systems**—exploring how ideas become real through experience, storytelling, and structure. From creating immersive art installations to engineering autonomous tools, my work lives at the intersection of **culture, technology, and design**.
 
-This page is a curated signal—a nonlinear transmission of projects shaped by travel, intuition, and lived experience.
-
-## Core Areas of Work
-
-- **Experience Design** — Art that can be felt, walked through, remembered
-- **Creative Systems** — Tools that empower people through structure and intuition
-- **Visual Identity** — Brand, film, and photographic storytelling
-- **Sonic Architecture** — Psych-folk loops, ambient scores, and cultural field recordings
-
 ## Current Projects
 
 - [Coyote Radio](./projects/coyote-radio.html) — A psych-folk performance and desert-rooted media project
