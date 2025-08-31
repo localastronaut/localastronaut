@@ -5,7 +5,7 @@ I’m building projects that merge technology, creative practice, and education 
 
 ---
 
-## ⚡ Current Focus
+## Current Focus
 
 ### **San Diego Institute of Technology (SDIT)**
 I founded **SDIT** to reimagine higher education for the 21st century.  
@@ -20,7 +20,7 @@ Think *Bell Labs meets a modern liberal arts renaissance* — a place where engi
 
 ---
 
-## 🛰️ Big Projects  
+## Big Projects  
 
 - **Terminal 82** → a creative studio/lab housing music, film, design, and counterculture projects.  
 - **Coyote Radio** → a psychedelic rock project and storytelling universe exploring authenticity in a digital age.  
@@ -30,7 +30,7 @@ Each of these projects connects back into SDIT — advancing the vision of a **p
 
 ---
 
-## 🌊 Vision  
+## Vision  
 
 I believe we’re entering a new era — a **Post-Industrial Renaissance**.  
 Where craftsmanship, creativity, and engineering combine to:  
