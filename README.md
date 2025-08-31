@@ -1,28 +1,45 @@
-Hello, I'm Brandon.
+# Brandon Nelson  
 
-I’m an interdisciplinary artist working across **film, sound, design, and systems**—exploring how ideas become real through experience, storytelling, and structure. From creating immersive art installations to engineering autonomous tools, my work lives at the intersection of **culture, technology, and design**.
+Hi, I’m Brandon — an artist, engineer, and founder working at the intersection of **technology, design, and culture**.  
+I’m building projects that merge technology, creative practice, and education into a new model for the future.  
 
-## Current Projects
+---
 
-- [Coyote Radio](./projects/coyote-radio.html) — A psych-folk performance and desert-rooted media project
-- [Crystal Nights](https://open.spotify.com/artist/4sctVpFNSpAohYYzCJWS4Y?si=tVOX5OLjTvmpoGrMYdhv9g) — Lo-fi sonic storytelling and immersive live sets
-- [Expedition Provisions](https://exprovisions.com) — A narrative-driven surf and adventure brand rooted in analog aesthetics and place-based storytelling  
+## ⚡ Current Focus
 
+### **San Diego Institute of Technology (SDIT)**
+I founded **SDIT** to reimagine higher education for the 21st century.  
+Think *Bell Labs meets a modern liberal arts renaissance* — a place where engineers, artists, and builders come together to create technologies, ideas, and cultural movements that matter.  
 
+- **Mission**: hands-on, world-class education that is affordable, interdisciplinary, and relevant.  
+- **Focus Areas**:  
+  - Defense Engineering & Unmanned Systems (DEUS)  
+  - Creative Intelligence & Interdisciplinary Arts  
+  - Mental Models, Systems Thinking, and Liberal Education 2.0  
+- **Goal**: Build the most advanced talent-producing and research-driven institution of the post-industrial era.  
 
-## Past Projects
+---
 
-- [PerDiem](https://localastronaut.github.io/portfolio/project-perdiem.html) — A pre-NFT creator investment platform, featured at SXSW
-- [Senses of Sound](./projects/senses-of-sound.html) — A multisensory installation exploring physical sound
-- [Red Bull Records](https://localastronaut.github.io/portfolio/project-redbullrecords.html) — Branding and digital campaigns for platinum-certified artists
-- [Mind The Music]([./projects/mindthemusic.html](https://localastronaut.github.io/portfolio/project-redbull.html)) — Underground experiental music events
-- [ExCollectives](https://localastronaut.github.io/portfolio/project-excollectives.html) — AI-driven health tech tools and ambient interfaces
+## 🛰️ Big Projects  
 
+- **Terminal 82** → a creative studio/lab housing music, film, design, and counterculture projects.  
+- **Coyote Radio** → a psychedelic rock project and storytelling universe exploring authenticity in a digital age.  
+- **Expedition Provisions** → coffee as cultural fuel, funding art, travel, and adventure.  
 
-## Philosophy
+Each of these projects connects back into SDIT — advancing the vision of a **post-industrial renaissance** where technology, creativity, and integrity align.  
 
-> I create by tuning into the frequency of the world around me.
-> Whether it’s a song, a system, or a story—my goal is to build things that feel honest, carry meaning, and make a positive impact.
+---
 
-## 📍 Currently in: San Diego, CA  
-- Portfolio Site: [localastronaut.github.io/portfolio](https://localastronaut.github.io/portfolio)  
+## 🌊 Vision  
+
+I believe we’re entering a new era — a **Post-Industrial Renaissance**.  
+Where craftsmanship, creativity, and engineering combine to:  
+
+- Build technologies that defend and protect.  
+- Create art that inspires people to live intentionally.  
+- Educate a new generation to tune into a deeper frequency of life.  
+
+I’m focused on not just as ideas, but as products, institutions, and movements that exist in the world.  
+
+---
+*“Ship things that matter. Build with integrity. Inspire a better world.”*  
