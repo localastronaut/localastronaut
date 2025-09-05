@@ -1,45 +1,54 @@
-# Brandon Nelson  
+# Brandon Nelson
 
-Hi, I’m Brandon — an artist, engineer, and founder working at the intersection of **technology, design, and culture**.  
-I’m building projects that merge technology, creative practice, and education into a new model for the future.  
+Hi, I’m Brandon — an **interdisciplinary artist and engineer** working at the intersection of technology, design, and culture.  
+I build projects that merge technology, creative practice, and education into a new model for the future.
 
 ---
 
-## Current Focus
+## 🚀 Current Focus  
 
-### **San Diego Institute of Technology (SDIT)**
-I founded **SDIT** to reimagine higher education for the 21st century.  
-Think *Bell Labs meets a modern liberal arts renaissance* — a place where engineers, artists, and builders come together to create technologies, ideas, and cultural movements that matter.  
+### [San Diego Institute of Technology (SDIT)](https://github.com/San-Diego-Institute-of-Technology/)  
 
-- **Mission**: hands-on, world-class education that is affordable, interdisciplinary, and relevant.  
-- **Focus Areas**:  
+I founded SDIT to reimagine higher education for the 21st century.  
+Think *Bell Labs meets a modern liberal arts renaissance* — a place where engineers, artists, and builders collaborate to create technologies, ideas, and cultural movements that matter.  
+
+- **Mission:** Hands-on, world-class education that is affordable, interdisciplinary, and relevant.  
+- **Focus Areas:**  
   - Defense Engineering & Unmanned Systems (DEUS)  
   - Creative Intelligence & Interdisciplinary Arts  
   - Mental Models, Systems Thinking, and Liberal Education 2.0  
-- **Goal**: Build the most advanced talent-producing and research-driven institution of the post-industrial era.  
+- **Goal:** Build the most advanced talent-producing, research-driven institution of the post-industrial era.  
 
 ---
 
-## Big Projects  
+## 🎨 Selected Work / Portfolio  
 
-- **Terminal 82** → a creative studio/lab housing music, film, design, and counterculture projects.  
-- **Coyote Radio** → a psychedelic rock project and storytelling universe exploring authenticity in a digital age.  
-- **Expedition Provisions** → coffee as cultural fuel, funding art, travel, and adventure.  
+A selection of projects from 2011–2025 — spanning **design, engineering, media, and music**.  
+Each tile opens a case study with visuals and context.  
 
-Each of these projects connects back into SDIT — advancing the vision of a **post-industrial renaissance** where technology, creativity, and integrity align.  
+- **#009 • 2024 • Expedition Provisions** → design, media — [project-expedition](projects/project-expedition.html)  
+- **#008 • 2018 • ExCollectives (Designing Artificial Intelligence)** → design, engineering — [project-excollectives](projects/project-excollectives.html)  
+- **#007 • 2018 • SelfCare** → design — [project-selfcare](projects/project-selfcare.html)  
+- **#006 • 2017 • Crystal Nights** → music, design — [project-crystal-nights](projects/project-crystal-nights.html)  
+- **#005 • 2017 • Mind The Music** → music — [project-music](projects/project-music.html)  
+- **#004 • 2016 • PerDiem** → engineering, music — [project-perdiem](projects/project-perdiem.html)  
+- **#003 • 2015 • The Idea Factory** → design, engineering — [project-factory](projects/project-factory.html)  
+- **#002 • 2013 • Red Bull Records** → media, design — [project-redbullrecords](projects/project-redbullrecords.html)  
+- **#001 • 2011 • RED BULL** → media, design — [project-redbull](projects/project-redbull.html)  
+
+👉 [View full portfolio site](https://localastronaut.github.io/portfolio/)  
+
+---
+
+## 🔗 Quick Links  
+
+- [Portfolio Home](index.html)  
+- [About](about.html)  
 
 ---
 
-## Vision  
+### ✉️ Reach Out  
 
-I believe we’re entering a new era — a **Post-Industrial Renaissance**.  
-Where craftsmanship, creativity, and engineering combine to:  
+I’m always open to collaborating with people who want to **design, build, and launch meaningful projects** — from technology and education to music, art, and culture.  
 
-- Build technologies that defend and protect.  
-- Create art that inspires people to live intentionally.  
-- Educate a new generation to tune into a deeper frequency of life.  
-
-I’m focused on not just as ideas, but as products, institutions, and movements that exist in the world.  
-
----
-*“Ship things that matter. Build with integrity. Inspire a better world.”*  
+If you’re interested in being part of any of these projects, let’s connect.  
