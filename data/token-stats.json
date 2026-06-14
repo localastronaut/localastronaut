@@ -1,76 +1,76 @@
 {
   "daily_by_source": {
     "2026-05-23": {
-      "claude": 26236852
+      "claude": 597717
     },
     "2026-05-24": {
-      "claude": 14942178
+      "claude": 633144
     },
     "2026-05-25": {
-      "claude": 1929930
+      "claude": 126913
     },
     "2026-05-26": {
-      "claude": 1814023
+      "claude": 133907
     },
     "2026-05-27": {
-      "claude": 12570307
+      "claude": 309265
     },
     "2026-05-28": {
-      "claude": 3646992
+      "claude": 33565
     },
     "2026-05-29": {
-      "claude": 149918230,
+      "claude": 1828689,
       "codex": 223082178
     },
     "2026-05-30": {
-      "claude": 672170480,
+      "claude": 13684238,
       "codex": 262517013
     },
     "2026-05-31": {
-      "claude": 748486238,
+      "claude": 26622109,
       "codex": 207523137
     },
     "2026-06-01": {
-      "claude": 35608040,
+      "claude": 101688,
       "codex": 18434361
     },
     "2026-06-03": {
-      "claude": 28766635
+      "claude": 598717
     },
     "2026-06-08": {
-      "claude": 3660904
+      "claude": 102202
     },
     "2026-06-09": {
-      "claude": 30943460
+      "claude": 648021
     },
     "2026-06-10": {
-      "claude": 394438
+      "claude": 15575
     },
     "2026-06-13": {
-      "claude": 10841965
+      "claude": 358977
     },
     "2026-06-14": {
-      "claude": 6442465,
-      "codex": 1061671
+      "claude": 139635,
+      "codex": 2478253
     }
   },
   "daily_totals": {
-    "2026-05-23": 26236852,
-    "2026-05-24": 14942178,
-    "2026-05-25": 1929930,
-    "2026-05-26": 1814023,
-    "2026-05-27": 12570307,
-    "2026-05-28": 3646992,
-    "2026-05-29": 373000408,
-    "2026-05-30": 934687493,
-    "2026-05-31": 956009375,
-    "2026-06-01": 54042401,
-    "2026-06-03": 28766635,
-    "2026-06-08": 3660904,
-    "2026-06-09": 30943460,
-    "2026-06-10": 394438,
-    "2026-06-13": 10841965,
-    "2026-06-14": 7504136
+    "2026-05-23": 597717,
+    "2026-05-24": 633144,
+    "2026-05-25": 126913,
+    "2026-05-26": 133907,
+    "2026-05-27": 309265,
+    "2026-05-28": 33565,
+    "2026-05-29": 224910867,
+    "2026-05-30": 276201251,
+    "2026-05-31": 234145246,
+    "2026-06-01": 18536049,
+    "2026-06-03": 598717,
+    "2026-06-08": 102202,
+    "2026-06-09": 648021,
+    "2026-06-10": 15575,
+    "2026-06-13": 358977,
+    "2026-06-14": 2617888
   },
   "sources": [
     {
@@ -86,38 +86,38 @@
       "messages": 8781,
       "mode": "live local",
       "note": "",
-      "peak_tokens": 748486238,
+      "peak_tokens": 26622109,
       "sessions": 20,
-      "tokens": 1748373137
+      "tokens": 45934362
     },
     {
       "active_days": 5,
-      "current_streak": 1,
+      "current_streak": 2,
       "errors": [],
       "favorite_model": "GPT-5.5",
       "id": "codex",
       "include_in_total": true,
       "label": "Codex",
-      "longest_streak": 4,
-      "longest_task_seconds": 498196,
+      "longest_streak": 20,
+      "longest_task_seconds": 7560,
       "messages": 0,
-      "mode": "local vscode",
-      "note": "",
-      "peak_tokens": 262517013,
+      "mode": "lifetime rollup + local detail",
+      "note": "Lifetime total comes from the Codex token activity screen; local SQLite supplies available daily detail.",
+      "peak_tokens": 310000000,
       "sessions": 14,
-      "tokens": 712618360
+      "tokens": 5300000000
     }
   ],
   "totals": {
     "active_days": 16,
     "current_streak": 2,
-    "favorite_model": "Opus 4.8",
-    "longest_streak": 10,
-    "longest_task_seconds": 498196,
+    "favorite_model": "GPT-5.5",
+    "longest_streak": 20,
+    "longest_task_seconds": 7560,
     "messages": 8781,
-    "peak_tokens": 956009375,
+    "peak_tokens": 310000000,
     "sessions": 34,
-    "tokens": 2460991497
+    "tokens": 5345934362
   },
   "updated_at": "2026-06-14"
 }

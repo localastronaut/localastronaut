@@ -18,6 +18,20 @@
       "models": {},
       "include_in_total": true,
       "note": "Use this shape for ChatGPT or cloud Codex totals when you have an export or API source."
+    },
+    {
+      "id": "codex",
+      "label": "Codex",
+      "mode": "lifetime rollup + local detail",
+      "color": "#60a5fa",
+      "total_tokens": 5300000000,
+      "peak_tokens": 310000000,
+      "longest_task_seconds": 7560,
+      "current_streak": 2,
+      "longest_streak": 20,
+      "favorite_model": "GPT-5.5",
+      "include_in_total": true,
+      "note": "When id matches a live source, this overrides the source total while preserving local daily detail."
     }
   ]
 }

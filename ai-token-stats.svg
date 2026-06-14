@@ -5,16 +5,16 @@
   <text x="170" y="38" fill="#93c5fd" font-size="13" font-family="monospace">@localastronaut</text>
   <text x="916" y="38" fill="#4b5563" font-size="11" font-family="monospace" text-anchor="end">updated 2026-06-14</text>
 
-  <rect x="24" y="68" width="292" height="66" rx="7" fill="#161b22" stroke="#30363d" stroke-width="1"/><text x="37" y="90" fill="#7d8590" font-size="11.5" font-family="system-ui,sans-serif">Total tokens</text><text x="37" y="117" fill="#e6edf3" font-size="21" font-weight="700" font-family="system-ui,sans-serif">2.5B</text>
-  <rect x="324" y="68" width="292" height="66" rx="7" fill="#161b22" stroke="#30363d" stroke-width="1"/><text x="337" y="90" fill="#7d8590" font-size="11.5" font-family="system-ui,sans-serif">Leading system</text><text x="337" y="117" fill="#e6edf3" font-size="21" font-weight="700" font-family="system-ui,sans-serif">Claude Code 71%</text>
-  <rect x="624" y="68" width="292" height="66" rx="7" fill="#161b22" stroke="#30363d" stroke-width="1"/><text x="637" y="90" fill="#7d8590" font-size="11.5" font-family="system-ui,sans-serif">Peak day</text><text x="637" y="117" fill="#e6edf3" font-size="21" font-weight="700" font-family="system-ui,sans-serif">956.0M</text>
-  <rect x="24" y="142" width="292" height="66" rx="7" fill="#161b22" stroke="#30363d" stroke-width="1"/><text x="37" y="164" fill="#7d8590" font-size="11.5" font-family="system-ui,sans-serif">Active days</text><text x="37" y="191" fill="#e6edf3" font-size="21" font-weight="700" font-family="system-ui,sans-serif">16d</text>
+  <rect x="24" y="68" width="292" height="66" rx="7" fill="#161b22" stroke="#30363d" stroke-width="1"/><text x="37" y="90" fill="#7d8590" font-size="11.5" font-family="system-ui,sans-serif">Total tokens</text><text x="37" y="117" fill="#e6edf3" font-size="21" font-weight="700" font-family="system-ui,sans-serif">5.3B</text>
+  <rect x="324" y="68" width="292" height="66" rx="7" fill="#161b22" stroke="#30363d" stroke-width="1"/><text x="337" y="90" fill="#7d8590" font-size="11.5" font-family="system-ui,sans-serif">Leading system</text><text x="337" y="117" fill="#e6edf3" font-size="21" font-weight="700" font-family="system-ui,sans-serif">Codex 99%</text>
+  <rect x="624" y="68" width="292" height="66" rx="7" fill="#161b22" stroke="#30363d" stroke-width="1"/><text x="637" y="90" fill="#7d8590" font-size="11.5" font-family="system-ui,sans-serif">Peak day</text><text x="637" y="117" fill="#e6edf3" font-size="21" font-weight="700" font-family="system-ui,sans-serif">310.0M</text>
+  <rect x="24" y="142" width="292" height="66" rx="7" fill="#161b22" stroke="#30363d" stroke-width="1"/><text x="37" y="164" fill="#7d8590" font-size="11.5" font-family="system-ui,sans-serif">Longest task</text><text x="37" y="191" fill="#e6edf3" font-size="21" font-weight="700" font-family="system-ui,sans-serif">2h 6m</text>
   <rect x="324" y="142" width="292" height="66" rx="7" fill="#161b22" stroke="#30363d" stroke-width="1"/><text x="337" y="164" fill="#7d8590" font-size="11.5" font-family="system-ui,sans-serif">Current streak</text><text x="337" y="191" fill="#e6edf3" font-size="21" font-weight="700" font-family="system-ui,sans-serif">2d</text>
-  <rect x="624" y="142" width="292" height="66" rx="7" fill="#161b22" stroke="#30363d" stroke-width="1"/><text x="637" y="164" fill="#7d8590" font-size="11.5" font-family="system-ui,sans-serif">Longest streak</text><text x="637" y="191" fill="#e6edf3" font-size="21" font-weight="700" font-family="system-ui,sans-serif">10d</text>
+  <rect x="624" y="142" width="292" height="66" rx="7" fill="#161b22" stroke="#30363d" stroke-width="1"/><text x="637" y="164" fill="#7d8590" font-size="11.5" font-family="system-ui,sans-serif">Longest streak</text><text x="637" y="191" fill="#e6edf3" font-size="21" font-weight="700" font-family="system-ui,sans-serif">20d</text>
 
   <text x="24" y="233" fill="#7d8590" font-size="12" font-family="system-ui,sans-serif">Source mix</text>
-  <circle cx="32" cy="263" r="5" fill="#f59e0b"/><text x="46" y="266" fill="#e6edf3" font-size="13" font-weight="600" font-family="system-ui,sans-serif">Claude Code</text><text x="46" y="281" fill="#7d8590" font-size="10" font-family="system-ui,sans-serif">live local</text><rect x="210" y="255" width="564" height="13" rx="6.5" fill="#21262d"/><rect x="210" y="255" width="401" height="13" rx="6.5" fill="#f59e0b"/><text x="788" y="266" fill="#e6edf3" font-size="12" font-family="system-ui,sans-serif">1.7B</text><text x="788" y="281" fill="#7d8590" font-size="10" font-family="system-ui,sans-serif">71% · 20 sessions</text>
-  <circle cx="32" cy="299" r="5" fill="#60a5fa"/><text x="46" y="302" fill="#e6edf3" font-size="13" font-weight="600" font-family="system-ui,sans-serif">Codex</text><text x="46" y="317" fill="#7d8590" font-size="10" font-family="system-ui,sans-serif">local vscode</text><rect x="210" y="291" width="564" height="13" rx="6.5" fill="#21262d"/><rect x="210" y="291" width="163" height="13" rx="6.5" fill="#60a5fa"/><text x="788" y="302" fill="#e6edf3" font-size="12" font-family="system-ui,sans-serif">712.6M</text><text x="788" y="317" fill="#7d8590" font-size="10" font-family="system-ui,sans-serif">29% · 14 sessions</text>
+  <circle cx="32" cy="263" r="5" fill="#60a5fa"/><text x="46" y="266" fill="#e6edf3" font-size="13" font-weight="600" font-family="system-ui,sans-serif">Codex</text><text x="46" y="281" fill="#7d8590" font-size="10" font-family="system-ui,sans-serif">lifetime rollup + local det…</text><rect x="210" y="255" width="564" height="13" rx="6.5" fill="#21262d"/><rect x="210" y="255" width="559" height="13" rx="6.5" fill="#60a5fa"/><text x="788" y="266" fill="#e6edf3" font-size="12" font-family="system-ui,sans-serif">5.3B</text><text x="788" y="281" fill="#7d8590" font-size="10" font-family="system-ui,sans-serif">99% · 14 sessions</text>
+  <circle cx="32" cy="299" r="5" fill="#f59e0b"/><text x="46" y="302" fill="#e6edf3" font-size="13" font-weight="600" font-family="system-ui,sans-serif">Claude Code</text><text x="46" y="317" fill="#7d8590" font-size="10" font-family="system-ui,sans-serif">live local</text><rect x="210" y="291" width="564" height="13" rx="6.5" fill="#21262d"/><rect x="210" y="291" width="5" height="13" rx="6.5" fill="#f59e0b"/><text x="788" y="302" fill="#e6edf3" font-size="12" font-family="system-ui,sans-serif">45.9M</text><text x="788" y="317" fill="#7d8590" font-size="10" font-family="system-ui,sans-serif">0.9% · 20 sessions</text>
 
   <text x="24" y="359" fill="#7d8590" font-size="12" font-family="system-ui,sans-serif">Daily activity</text>
   <circle cx="166" cy="355" r="4" fill="#f59e0b"/><text x="175" y="359" fill="#7d8590" font-size="10" font-family="system-ui,sans-serif">Claude Code</text><circle cx="296" cy="355" r="4" fill="#60a5fa"/><text x="305" y="359" fill="#7d8590" font-size="10" font-family="system-ui,sans-serif">Codex</text>
@@ -374,29 +374,29 @@
     <rect x="624" y="39" width="10" height="10" rx="2" fill="#21262d"><title>2026-05-20: 0 tokens</title></rect>
     <rect x="624" y="52" width="10" height="10" rx="2" fill="#21262d"><title>2026-05-21: 0 tokens</title></rect>
     <rect x="624" y="65" width="10" height="10" rx="2" fill="#21262d"><title>2026-05-22: 0 tokens</title></rect>
-    <rect x="624" y="78" width="10" height="10" rx="2" fill="#d68d10"><title>2026-05-23: 26.2M tokens (Claude Code 26.2M)</title></rect>
-    <rect x="637" y="0" width="10" height="10" rx="2" fill="#d28a11"><title>2026-05-24: 14.9M tokens (Claude Code 14.9M)</title></rect>
-    <rect x="637" y="13" width="10" height="10" rx="2" fill="#c38213"><title>2026-05-25: 1.9M tokens (Claude Code 1.9M)</title></rect>
-    <rect x="637" y="26" width="10" height="10" rx="2" fill="#c28113"><title>2026-05-26: 1.8M tokens (Claude Code 1.8M)</title></rect>
-    <rect x="637" y="39" width="10" height="10" rx="2" fill="#d18a11"><title>2026-05-27: 12.6M tokens (Claude Code 12.6M)</title></rect>
-    <rect x="637" y="52" width="10" height="10" rx="2" fill="#c88412"><title>2026-05-28: 3.6M tokens (Claude Code 3.6M)</title></rect>
-    <rect x="637" y="65" width="10" height="10" rx="2" fill="#5d9eef"><title>2026-05-29: 373.0M tokens (Codex 223.1M, Claude Code 149.9M)</title></rect>
-    <rect x="637" y="78" width="10" height="10" rx="2" fill="#f19c0c"><title>2026-05-30: 934.7M tokens (Claude Code 672.2M, Codex 262.5M)</title></rect>
-    <rect x="650" y="0" width="10" height="10" rx="2" fill="#f19c0c"><title>2026-05-31: 956.0M tokens (Claude Code 748.5M, Codex 207.5M)</title></rect>
-    <rect x="650" y="13" width="10" height="10" rx="2" fill="#dc900f"><title>2026-06-01: 54.0M tokens (Claude Code 35.6M, Codex 18.4M)</title></rect>
+    <rect x="624" y="78" width="10" height="10" rx="2" fill="#c18013"><title>2026-05-23: 597.7K tokens (Claude Code 597.7K)</title></rect>
+    <rect x="637" y="0" width="10" height="10" rx="2" fill="#c18113"><title>2026-05-24: 633.1K tokens (Claude Code 633.1K)</title></rect>
+    <rect x="637" y="13" width="10" height="10" rx="2" fill="#b47915"><title>2026-05-25: 126.9K tokens (Claude Code 126.9K)</title></rect>
+    <rect x="637" y="26" width="10" height="10" rx="2" fill="#b57a15"><title>2026-05-26: 133.9K tokens (Claude Code 133.9K)</title></rect>
+    <rect x="637" y="39" width="10" height="10" rx="2" fill="#bb7d14"><title>2026-05-27: 309.3K tokens (Claude Code 309.3K)</title></rect>
+    <rect x="637" y="52" width="10" height="10" rx="2" fill="#aa7417"><title>2026-05-28: 33.6K tokens (Claude Code 33.6K)</title></rect>
+    <rect x="637" y="65" width="10" height="10" rx="2" fill="#5ea1f4"><title>2026-05-29: 224.9M tokens (Codex 223.1M, Claude Code 1.8M)</title></rect>
+    <rect x="637" y="78" width="10" height="10" rx="2" fill="#5fa2f6"><title>2026-05-30: 276.2M tokens (Codex 262.5M, Claude Code 13.7M)</title></rect>
+    <rect x="650" y="0" width="10" height="10" rx="2" fill="#5ea2f5"><title>2026-05-31: 234.1M tokens (Codex 207.5M, Claude Code 26.6M)</title></rect>
+    <rect x="650" y="13" width="10" height="10" rx="2" fill="#5896e1"><title>2026-06-01: 18.5M tokens (Codex 18.4M, Claude Code 101.7K)</title></rect>
     <rect x="650" y="26" width="10" height="10" rx="2" fill="#21262d"><title>2026-06-02: 0 tokens</title></rect>
-    <rect x="650" y="39" width="10" height="10" rx="2" fill="#d78d10"><title>2026-06-03: 28.8M tokens (Claude Code 28.8M)</title></rect>
+    <rect x="650" y="39" width="10" height="10" rx="2" fill="#c18013"><title>2026-06-03: 598.7K tokens (Claude Code 598.7K)</title></rect>
     <rect x="650" y="52" width="10" height="10" rx="2" fill="#21262d"><title>2026-06-04: 0 tokens</title></rect>
     <rect x="650" y="65" width="10" height="10" rx="2" fill="#21262d"><title>2026-06-05: 0 tokens</title></rect>
     <rect x="650" y="78" width="10" height="10" rx="2" fill="#21262d"><title>2026-06-06: 0 tokens</title></rect>
     <rect x="663" y="0" width="10" height="10" rx="2" fill="#21262d"><title>2026-06-07: 0 tokens</title></rect>
-    <rect x="663" y="13" width="10" height="10" rx="2" fill="#c88412"><title>2026-06-08: 3.7M tokens (Claude Code 3.7M)</title></rect>
-    <rect x="663" y="26" width="10" height="10" rx="2" fill="#d78d10"><title>2026-06-09: 30.9M tokens (Claude Code 30.9M)</title></rect>
-    <rect x="663" y="39" width="10" height="10" rx="2" fill="#b77b15"><title>2026-06-10: 394.4K tokens (Claude Code 394.4K)</title></rect>
+    <rect x="663" y="13" width="10" height="10" rx="2" fill="#b37816"><title>2026-06-08: 102.2K tokens (Claude Code 102.2K)</title></rect>
+    <rect x="663" y="26" width="10" height="10" rx="2" fill="#c18113"><title>2026-06-09: 648.0K tokens (Claude Code 648.0K)</title></rect>
+    <rect x="663" y="39" width="10" height="10" rx="2" fill="#a47018"><title>2026-06-10: 15.6K tokens (Claude Code 15.6K)</title></rect>
     <rect x="663" y="52" width="10" height="10" rx="2" fill="#21262d"><title>2026-06-11: 0 tokens</title></rect>
     <rect x="663" y="65" width="10" height="10" rx="2" fill="#21262d"><title>2026-06-12: 0 tokens</title></rect>
-    <rect x="663" y="78" width="10" height="10" rx="2" fill="#d08911"><title>2026-06-13: 10.8M tokens (Claude Code 10.8M)</title></rect>
-    <rect x="676" y="0" width="10" height="10" rx="2" fill="#cd8711"><title>2026-06-14: 7.5M tokens (Claude Code 6.4M, Codex 1.1M)</title></rect>
+    <rect x="663" y="78" width="10" height="10" rx="2" fill="#bd7e14"><title>2026-06-13: 359.0K tokens (Claude Code 359.0K)</title></rect>
+    <rect x="676" y="0" width="10" height="10" rx="2" fill="#548dd3"><title>2026-06-14: 2.6M tokens (Codex 2.5M, Claude Code 139.6K)</title></rect>
   </g>
 
   <text x="24" y="514" fill="#4b5563" font-size="11" font-family="system-ui,sans-serif">Cell color shows the dominant system per day; brightness shows total tokens.</text>

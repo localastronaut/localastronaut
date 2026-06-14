@@ -78,9 +78,9 @@ class SourceStats:
         if self.model_tokens and not self.favorite_model:
             self.favorite_model = pretty_model(self.model_tokens.most_common(1)[0][0])
         if self.daily_tokens:
-            self.current_streak, self.longest_streak = streaks(
-                set(self.daily_tokens), today
-            )
+            current_streak, longest_streak = streaks(set(self.daily_tokens), today)
+            self.current_streak = max(self.current_streak, current_streak)
+            self.longest_streak = max(self.longest_streak, longest_streak)
 
 
 def e(value: object) -> str:
@@ -147,12 +147,7 @@ def pretty_model(model: str) -> str:
 def token_count_from_usage(usage: dict[str, Any] | None) -> int:
     if not isinstance(usage, dict):
         return 0
-    keys = (
-        "input_tokens",
-        "output_tokens",
-        "cache_creation_input_tokens",
-        "cache_read_input_tokens",
-    )
+    keys = ("input_tokens", "output_tokens")
     return sum(int(usage.get(key) or 0) for key in keys)
 
 
@@ -386,6 +381,44 @@ def load_manual(path: Path, today: dt.date) -> list[SourceStats]:
     return results
 
 
+def merge_sources(
+    live_sources: list[SourceStats], manual_sources: list[SourceStats], today: dt.date
+) -> list[SourceStats]:
+    sources_by_id = {source.id: source for source in live_sources}
+    ordered_ids = [source.id for source in live_sources]
+
+    for manual in manual_sources:
+        existing = sources_by_id.get(manual.id)
+        if not existing:
+            sources_by_id[manual.id] = manual
+            ordered_ids.append(manual.id)
+            continue
+
+        existing.label = manual.label or existing.label
+        existing.color = manual.color or existing.color
+        existing.mode = manual.mode or existing.mode
+        existing.include_in_total = manual.include_in_total
+        existing.note = manual.note or existing.note
+        existing.tokens = max(existing.tokens, manual.tokens)
+        existing.sessions = max(existing.sessions, manual.sessions)
+        existing.messages = max(existing.messages, manual.messages)
+        existing.active_days = max(existing.active_days, manual.active_days)
+        existing.current_streak = max(existing.current_streak, manual.current_streak)
+        existing.longest_streak = max(existing.longest_streak, manual.longest_streak)
+        existing.peak_tokens = max(existing.peak_tokens, manual.peak_tokens)
+        if manual.longest_task_seconds:
+            existing.longest_task_seconds = manual.longest_task_seconds
+        if manual.favorite_model:
+            existing.favorite_model = manual.favorite_model
+        existing.model_tokens.update(manual.model_tokens)
+        for day, tokens in manual.daily_tokens.items():
+            existing.daily_tokens[day] = existing.daily_tokens.get(day, 0) + tokens
+        existing.errors.extend(manual.errors)
+        existing.finalize(today)
+
+    return [sources_by_id[source_id] for source_id in ordered_ids]
+
+
 def combine(sources: list[SourceStats], today: dt.date) -> dict[str, Any]:
     included = [source for source in sources if source.include_in_total]
     daily_totals: dict[str, int] = defaultdict(int)
@@ -404,6 +437,9 @@ def combine(sources: list[SourceStats], today: dt.date) -> dict[str, Any]:
     peak_source = max((source.peak_tokens for source in included), default=0)
     total_tokens = sum(source.tokens for source in included)
     leader = max(included, key=lambda source: source.tokens, default=None)
+    longest_task_seconds = max((s.longest_task_seconds for s in included), default=0)
+    if leader and leader.longest_task_seconds:
+        longest_task_seconds = leader.longest_task_seconds
 
     return {
         "total_tokens": total_tokens,
@@ -413,7 +449,7 @@ def combine(sources: list[SourceStats], today: dt.date) -> dict[str, Any]:
         "current_streak": current_streak or max((s.current_streak for s in included), default=0),
         "longest_streak": max(longest_streak, *(s.longest_streak for s in included), 0),
         "peak_tokens": max(peak_daily, peak_source),
-        "longest_task_seconds": max((s.longest_task_seconds for s in included), default=0),
+        "longest_task_seconds": longest_task_seconds,
         "favorite_model": pretty_model(model_tokens.most_common(1)[0][0]) if model_tokens else "n/a",
         "leader": leader,
         "daily_totals": dict(sorted(daily_totals.items())),
@@ -540,7 +576,7 @@ def stat_cards(combined: dict[str, Any], y: int, width: int, pad: int) -> str:
         ("Total tokens", fmt_n(combined["total_tokens"])),
         ("Leading system", shorten(leader_text, 18)),
         ("Peak day", fmt_n(combined["peak_tokens"])),
-        ("Active days", f"{combined['active_days']}d"),
+        ("Longest task", fmt_duration(combined["longest_task_seconds"])),
         ("Current streak", f"{combined['current_streak']}d"),
         ("Longest streak", f"{combined['longest_streak']}d"),
     ]
@@ -666,7 +702,11 @@ def main() -> int:
 
     today = dt.date.fromisoformat(args.today) if args.today else dt.date.today()
     manual_path = Path(args.manual).expanduser()
-    sources = [load_claude(today), load_codex(today), *load_manual(manual_path, today)]
+    sources = merge_sources(
+        [load_claude(today), load_codex(today)],
+        load_manual(manual_path, today),
+        today,
+    )
     sources = [source for source in sources if source.tokens or source.daily_tokens or source.note]
     combined = combine(sources, today)
 

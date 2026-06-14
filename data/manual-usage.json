@@ -1,3 +1,18 @@
 {
-  "sources": []
+  "sources": [
+    {
+      "id": "codex",
+      "label": "Codex",
+      "mode": "lifetime rollup + local detail",
+      "color": "#60a5fa",
+      "total_tokens": 5300000000,
+      "peak_tokens": 310000000,
+      "longest_task_seconds": 7560,
+      "current_streak": 2,
+      "longest_streak": 20,
+      "favorite_model": "GPT-5.5",
+      "include_in_total": true,
+      "note": "Lifetime total comes from the Codex token activity screen; local SQLite supplies available daily detail."
+    }
+  ]
 }
