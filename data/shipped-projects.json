@@ -1,0 +1,12 @@
+{
+  "_comment": "Projects tracked for the token-efficiency metric (tokens per public ship). status: 'shipped' = public, others can use it; 'building' = private, headed for a public release. 'match' = case-insensitive substrings of the log-folder key used to attribute tokens. ANYTHING NOT LISTED HERE IS IGNORED — private/work projects, music exploration, and one-off tasks don't count for or against you. Edit freely; the chart picks it up on the next run.",
+  "projects": [
+    { "name": "World of Crystal Nights", "status": "shipped",  "match": ["world-of-crystal-nights"] },
+    { "name": "Portfolio",               "status": "shipped",  "match": ["personal-portfolio"] },
+    { "name": "Harvard CS Classics",     "status": "shipped",  "match": ["harvard-cs-classics"] },
+    { "name": "Focus",                   "status": "shipped",  "match": ["personal-focus", "codex:focus"] },
+    { "name": "SDIT",                    "status": "shipped",  "match": ["san-diego-tech"] },
+    { "name": "Coyote Radio",            "status": "building", "match": ["coyote radio"] },
+    { "name": "Music plugins",           "status": "building", "match": ["music-production-plugins"] }
+  ]
+}

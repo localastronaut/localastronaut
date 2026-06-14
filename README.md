@@ -12,7 +12,7 @@ There's room for people who want to be part of it. If you're interested — whet
 
 ---
 
-The chart below tracks some of the AI tools I've been reaching for lately — basically a running experiment to see which models I'm using the most. It's pulled straight from my own machine and redraws itself automatically.
+The chart below tracks the AI tools I build with — and, more to the point, my **token-efficiency**: roughly how many tokens it takes me to actually ship something people can use. The goal was never to burn the most tokens; it's to get the most *out* of them, and to watch that number fall as I ship. Pulled from my own machine, redrawn automatically.
 
 ![AI model usage](./ai-token-stats.svg)
 

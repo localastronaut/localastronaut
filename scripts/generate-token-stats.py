@@ -743,10 +743,91 @@ def fun_fact(total: int) -> str:
     return f"~{best_mult:,}× the text of {best_name}, written as code"
 
 
+# ── token-efficiency (tokens per public ship) ─────────────────────────────────
+
+def tokens_by_project() -> dict[str, int]:
+    """Work tokens attributed to each project folder. Claude dirs encode the
+    working path; Codex sessions carry a cwd in session_meta."""
+    proj: dict[str, int] = defaultdict(int)
+
+    for d in glob.glob(str(CLAUDE_PROJECTS_DIR / "*")):
+        if not os.path.isdir(d):
+            continue
+        total = 0
+        for f in glob.glob(os.path.join(d, "**", "*.jsonl"), recursive=True):
+            try:
+                with open(f, encoding="utf-8", errors="ignore") as fp:
+                    for line in fp:
+                        try:
+                            m = json.loads(line).get("message", {})
+                            if m.get("role") == "assistant":
+                                total += token_count_from_usage(m.get("usage"))
+                        except Exception:
+                            pass
+            except OSError:
+                pass
+        if total:
+            proj[os.path.basename(d)] += total
+
+    for f in glob.glob(str(CODEX_SESSIONS_DIR / "**" / "*.jsonl"), recursive=True):
+        cwd, tok = None, 0
+        try:
+            with open(f, encoding="utf-8", errors="ignore") as fp:
+                for line in fp:
+                    try:
+                        d = json.loads(line)
+                        p = d.get("payload", {})
+                        if not isinstance(p, dict):
+                            continue
+                        if not cwd and d.get("type") == "session_meta":
+                            cwd = p.get("cwd")          # session_meta type is top-level
+                        if p.get("type") == "token_count":
+                            last = (p.get("info", {}) or {}).get("last_token_usage", {}) or {}
+                            tok += max(0, last.get("input_tokens", 0)
+                                       - last.get("cached_input_tokens", 0)) + last.get("output_tokens", 0)
+                    except Exception:
+                        pass
+        except OSError:
+            pass
+        if tok and cwd:
+            proj["codex:" + os.path.basename(str(cwd).rstrip("/"))] += tok
+
+    return dict(proj)
+
+
+def load_shipped(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    try:
+        return json.loads(path.read_text(encoding="utf-8")).get("projects", [])
+    except Exception:
+        return []
+
+
+def compute_efficiency(project_tokens: dict[str, int], tracked: list[dict]) -> dict[str, Any]:
+    """tokens-per-ship = tokens on tracked projects ÷ # shipped. Untracked
+    projects (private/work/exploration) are ignored entirely."""
+    total = shipped = building = 0
+    for p in tracked:
+        patterns = [m.lower() for m in p.get("match", [])]
+        total += sum(v for k, v in project_tokens.items()
+                     if any(m in k.lower() for m in patterns))
+        if p.get("status") == "shipped":
+            shipped += 1
+        elif p.get("status") == "building":
+            building += 1
+    return {
+        "tokens_per_ship": (total // shipped) if shipped else 0,
+        "shipped": shipped,
+        "building": building,
+        "tracked_tokens": total,
+    }
+
+
 # ── svg ───────────────────────────────────────────────────────────────────────
 
 def generate_svg(sources: list[SourceStats], combined: dict[str, Any],
-                 username: str, today: dt.date) -> str:
+                 efficiency: dict[str, Any], username: str, today: dt.date) -> str:
     W, pad = 940, 28
     inner = W - 2 * pad
 
@@ -754,35 +835,49 @@ def generate_svg(sources: list[SourceStats], combined: dict[str, Any],
 
     fair = combined["fair_total"]
     lifetime = combined["lifetime_total"]
+    eff = efficiency
 
-    # ranking bars are the focus; the all-time total is a small footnote stat
-    y_meta = 26
-    bars_y = 50
+    # top band: token-efficiency headline (left) · most-used ranking (right)
+    y_meta = 24
+    eff_num_y = 64
+    eff_sub_y = 86
+    bars_x = pad + 330
+    bars_w = inner - 330
+    bars_y = 34
     share_h = len(sources) * 34
-    y_lanes = bars_y + share_h + 30
+    y_lanes = max(eff_sub_y, bars_y + share_h) + 30
     H = y_lanes + lanes_h + pad
+
+    eff_num = f'{fmt_n(eff.get("tokens_per_ship", 0))}' if eff.get("tokens_per_ship") else "—"
 
     p: list[str] = [
         f'<rect width="{W}" height="{H}" rx="14" fill="{BG}" stroke="{BORDER}"/>',
-        # de-emphasized all-time total (left) + handle/freshness (right)
-        f'<text x="{pad}" y="{y_meta}" fill="{MUTED}" font-size="12" font-family="{FONT}">'
-        f'<tspan fill="{TEXT}" font-weight="700">{fmt_n(lifetime)}+</tspan> tokens all-time</text>',
+        # label row: metric name (left) + handle/freshness (right)
+        f'<text x="{pad}" y="{y_meta}" fill="{MUTED}" font-size="11" letter-spacing="0.5" '
+        f'font-family="{FONT}">TOKEN-EFFICIENCY <tspan fill="{DIM}" letter-spacing="0">· tokens per public ship</tspan></text>',
         f'<text x="{W - pad}" y="{y_meta}" fill="{DIM}" font-size="11" font-family="{MONO}" '
         f'text-anchor="end">@{e(username)} · updated {today.isoformat()}</text>',
-        # most-used ranking — the focus, full width
-        share_bars(sources, fair, pad, bars_y, inner),
+        # efficiency headline number (left)
+        f'<text x="{pad}" y="{eff_num_y}" fill="{TEXT}" font-size="38" font-weight="800" '
+        f'font-family="{FONT}">{eff_num}<tspan fill="{MUTED}" font-size="16" font-weight="500"> / ship</tspan></text>',
+        f'<text x="{pad}" y="{eff_sub_y}" fill="{MUTED}" font-size="11.5" font-family="{FONT}">'
+        f'{eff.get("shipped", 0)} shipped · {eff.get("building", 0)} building · '
+        f'<tspan fill="{DIM}">{fmt_n(lifetime)}+ tokens all-time</tspan></text>',
+        # most-used ranking (right)
+        share_bars(sources, fair, bars_x, bars_y, bars_w),
         # activity timeline, one lane per tool (full width)
         f'<g transform="translate({pad},{y_lanes})">\n    {lanes_svg}\n  </g>',
     ]
     return (f'<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
             f'xmlns="http://www.w3.org/2000/svg" role="img" '
-            f'aria-label="AI model token usage">\n  ' + "\n  ".join(p) + "\n</svg>")
+            f'aria-label="AI coding token-efficiency">\n  ' + "\n  ".join(p) + "\n</svg>")
 
 
 def write_summary(path: Path, sources: list[SourceStats], combined: dict[str, Any],
-                  today: dt.date) -> None:
+                  efficiency: dict[str, Any], today: dt.date) -> None:
     payload = {
         "updated_at": today.isoformat(),
+        "token_efficiency": efficiency,
         "totals": {
             "fair_tokens": combined["fair_total"],
             "lifetime_tokens": combined["lifetime_total"],
@@ -818,6 +913,7 @@ def main() -> int:
     parser.add_argument("--output", "-o", default="ai-token-stats.svg")
     parser.add_argument("--summary", default="data/token-stats.json")
     parser.add_argument("--manual", default="data/manual-usage.json")
+    parser.add_argument("--shipped", default="data/shipped-projects.json")
     parser.add_argument("--username", default=DEFAULT_USERNAME)
     parser.add_argument("--today", default="")
     args = parser.parse_args()
@@ -828,13 +924,18 @@ def main() -> int:
     sources = merge_manual(live, load_manual(Path(args.manual).expanduser(), today), today)
     sources = [s for s in sources if s.work_tokens or s.daily_work or s.lifetime_tokens]
     combined = combine(sources, today)
+    efficiency = compute_efficiency(tokens_by_project(),
+                                    load_shipped(Path(args.shipped).expanduser()))
 
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(generate_svg(sources, combined, args.username, today), encoding="utf-8")
-    write_summary(Path(args.summary), sources, combined, today)
+    output.write_text(generate_svg(sources, combined, efficiency, args.username, today), encoding="utf-8")
+    write_summary(Path(args.summary), sources, combined, efficiency, today)
 
     print(f"wrote {output}")
+    print(f"token-efficiency: {fmt_n(efficiency['tokens_per_ship'])}/ship "
+          f"({efficiency['shipped']} shipped, {efficiency['building']} building, "
+          f"{fmt_n(efficiency['tracked_tokens'])} tracked)")
     print(f"fair total: {fmt_n(combined['fair_total'])}  ·  lifetime: {fmt_n(combined['lifetime_total'])}")
     for s in sorted(sources, key=lambda s: s.work_tokens, reverse=True):
         print(f"- {s.label}: fair {fmt_n(s.work_tokens)} · lifetime {fmt_n(s.lifetime_tokens)} ({s.mode})")
