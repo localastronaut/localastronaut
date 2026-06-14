@@ -1,6 +1,8 @@
 # `@localastronaut`
 
-Welcome 👋 Feel free to dig through the [projects I've been working on](https://github.com/localastronaut?tab=repositories), or check out the **"how I code"** writeup on my studio page to learn more about my process.
+👋 This is my online studio — where I keep the things I'm working on. Just me and my laptop, mostly.
+
+Curious how it comes together? Take a look at **"how I code"**, or browse [some of my projects](https://github.com/localastronaut?tab=repositories) as I put them out.
 
 ## San Diego Institute of Technology
 
