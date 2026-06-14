@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.localastronaut.aistats</string>
+
+  <!-- Daily snapshot of AI coding token stats: regenerate, commit, push. -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/brandon/Github/Personal/localastronaut/scripts/update-token-stats.sh</string>
+    <string>--commit</string>
+    <string>--push</string>
+  </array>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <!-- launchd has a minimal PATH; include Homebrew + system bins for python3/git. -->
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <!-- The updater already pushes with this set; redundant guard is harmless. -->
+    <key>LOCALASTRONAUT_TOKEN_STATS_SKIP</key>
+    <string>1</string>
+  </dict>
+
+  <!-- Run at 9:00 AM local time every day. -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>9</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+
+  <!-- If the Mac was asleep at 9:00, run as soon as it wakes. -->
+  <key>RunAtLoad</key>
+  <false/>
+
+  <key>StandardOutPath</key>
+  <string>/Users/brandon/.cache/localastronaut-token-stats/daily.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/brandon/.cache/localastronaut-token-stats/daily.log</string>
+</dict>
+</plist>
