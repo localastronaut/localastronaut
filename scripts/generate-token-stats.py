@@ -755,32 +755,22 @@ def generate_svg(sources: list[SourceStats], combined: dict[str, Any],
     fair = combined["fair_total"]
     lifetime = combined["lifetime_total"]
 
-    # top band: all-time number (left) · most-used ranking (right)
+    # ranking bars are the focus; the all-time total is a small footnote stat
     y_meta = 26
-    top_y = 52
-    at_label_y = top_y + 6
-    at_num_y = top_y + 50
-    bars_x = pad + 296
-    bars_w = inner - 296
-    bars_y = top_y
+    bars_y = 50
     share_h = len(sources) * 34
-
-    top_h = max(at_num_y - top_y + 8, share_h)
-    y_lanes = top_y + top_h + 36
+    y_lanes = bars_y + share_h + 30
     H = y_lanes + lanes_h + pad
 
     p: list[str] = [
         f'<rect width="{W}" height="{H}" rx="14" fill="{BG}" stroke="{BORDER}"/>',
-        # handle + freshness (top-right)
+        # de-emphasized all-time total (left) + handle/freshness (right)
+        f'<text x="{pad}" y="{y_meta}" fill="{MUTED}" font-size="12" font-family="{FONT}">'
+        f'<tspan fill="{TEXT}" font-weight="700">{fmt_n(lifetime)}+</tspan> tokens all-time</text>',
         f'<text x="{W - pad}" y="{y_meta}" fill="{DIM}" font-size="11" font-family="{MONO}" '
         f'text-anchor="end">@{e(username)} · updated {today.isoformat()}</text>',
-        # all-time tokens (left)
-        f'<text x="{pad}" y="{at_label_y}" fill="{MUTED}" font-size="11.5" letter-spacing="0.5" '
-        f'font-family="{FONT}">ALL-TIME TOKENS</text>',
-        f'<text x="{pad}" y="{at_num_y}" fill="{TEXT}" font-size="46" font-weight="800" '
-        f'font-family="{FONT}">{fmt_n(lifetime)}+</text>',
-        # currently most-used ranking (right)
-        share_bars(sources, fair, bars_x, bars_y, bars_w),
+        # most-used ranking — the focus, full width
+        share_bars(sources, fair, pad, bars_y, inner),
         # activity timeline, one lane per tool (full width)
         f'<g transform="translate({pad},{y_lanes})">\n    {lanes_svg}\n  </g>',
     ]

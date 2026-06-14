@@ -17,3 +17,13 @@ The chart below tracks some of the AI tools I've been reaching for lately — ba
 ![AI model usage](./ai-token-stats.svg)
 
 <sub>Coding usage only — not how I use these apps day to day. <a href="./scripts/generate-token-stats.py">The script</a> reads my local logs and publishes aggregate counts only, never prompts or code.</sub>
+
+---
+
+## Projects
+
+A few things I've shipped publicly — more as they're ready:
+
+- **[World of Crystal Nights](http://crystalnights.io)** — An immersive web experience.
+- **[Portfolio](https://localastronaut.github.io/portfolio/)** — A few design projects I've worked on.
+- **[Harvard CS Classics](https://localastronaut.github.io/harvard-cs-classics/)** — A resource for collaborative paper research.
