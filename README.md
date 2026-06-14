@@ -6,4 +6,4 @@ Exploring music, film, and systems for creating meaningful work.
 
 ---
 
-![Claude Code Stats](./claude-stats.svg)
+![AI Token Activity](./ai-token-stats.svg)

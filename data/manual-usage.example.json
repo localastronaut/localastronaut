@@ -1,0 +1,23 @@
+{
+  "sources": [
+    {
+      "id": "chatgpt",
+      "label": "ChatGPT",
+      "mode": "manual/export",
+      "color": "#10b981",
+      "total_tokens": 0,
+      "sessions": 0,
+      "messages": 0,
+      "active_days": 0,
+      "current_streak": 0,
+      "longest_streak": 0,
+      "peak_tokens": 0,
+      "longest_task_seconds": 0,
+      "favorite_model": "",
+      "daily_tokens": {},
+      "models": {},
+      "include_in_total": true,
+      "note": "Use this shape for ChatGPT or cloud Codex totals when you have an export or API source."
+    }
+  ]
+}
