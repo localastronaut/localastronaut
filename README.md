@@ -8,7 +8,9 @@ Curious how it comes together? Take a look at **"how I code"**, or browse [some 
 
 **SDIT** is the project I'm most focused on right now — the thing I'm putting the most into, and what I'm most excited about building.
 
-There's room for people who want to be part of it. If you're interested — whether you want to build, get involved, or just learn more about where it's headed — I'd genuinely love to hear from you. **Reach out.**
+There's room for people who want to be part of it. If you're interested — whether you want to build, get involved, or just learn more about where it's headed — I'd genuinely love to hear from you.
+
+**Reach out → [brandon@sandiegotech.org](mailto:brandon@sandiegotech.org)**
 
 ---
 
