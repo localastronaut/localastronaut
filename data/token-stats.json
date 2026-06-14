@@ -19,20 +19,16 @@
       "claude": 33565
     },
     "2026-05-29": {
-      "claude": 1828689,
-      "codex": 223082178
+      "claude": 1828689
     },
     "2026-05-30": {
-      "claude": 13684238,
-      "codex": 262517013
+      "claude": 13684238
     },
     "2026-05-31": {
-      "claude": 26622109,
-      "codex": 207523137
+      "claude": 26622109
     },
     "2026-06-01": {
-      "claude": 101688,
-      "codex": 18434361
+      "claude": 101688
     },
     "2026-06-03": {
       "claude": 598717
@@ -50,8 +46,7 @@
       "claude": 358977
     },
     "2026-06-14": {
-      "claude": 141095,
-      "codex": 5808080
+      "claude": 519559
     }
   },
   "daily_totals": {
@@ -61,16 +56,16 @@
     "2026-05-26": 133907,
     "2026-05-27": 309265,
     "2026-05-28": 33565,
-    "2026-05-29": 224910867,
-    "2026-05-30": 276201251,
-    "2026-05-31": 234145246,
-    "2026-06-01": 18536049,
+    "2026-05-29": 1828689,
+    "2026-05-30": 13684238,
+    "2026-05-31": 26622109,
+    "2026-06-01": 101688,
     "2026-06-03": 598717,
     "2026-06-08": 102202,
     "2026-06-09": 648021,
     "2026-06-10": 15575,
     "2026-06-13": 358977,
-    "2026-06-14": 5949175
+    "2026-06-14": 519559
   },
   "sources": [
     {
@@ -92,7 +87,7 @@
         "2026-06-09": 648021,
         "2026-06-10": 15575,
         "2026-06-13": 358977,
-        "2026-06-14": 141095
+        "2026-06-14": 519559
       },
       "errors": [],
       "favorite_model": "Opus 4.8",
@@ -101,12 +96,12 @@
       "label": "Claude Code",
       "longest_streak": 10,
       "longest_task_seconds": 330086,
-      "messages": 8789,
+      "messages": 9076,
       "mode": "live local",
       "note": "",
       "peak_tokens": 26622109,
-      "sessions": 20,
-      "tokens": 45935822
+      "sessions": 21,
+      "tokens": 46314286
     },
     {
       "active_days": 114,
@@ -224,13 +219,12 @@
         "2026-05-19": 25,
         "2026-05-24": 25,
         "2026-05-27": 25,
-        "2026-05-29": 223082178,
-        "2026-05-30": 262517013,
-        "2026-05-31": 207523137,
-        "2026-06-01": 18434361,
-        "2026-06-14": 5808080
+        "2026-05-30": 50,
+        "2026-05-31": 25
       },
-      "errors": [],
+      "errors": [
+        "/Users/brandon/.codex/sqlite/state_5.sqlite: unable to open database file"
+      ],
       "favorite_model": "GPT-5.5",
       "id": "codex",
       "include_in_total": true,
@@ -241,20 +235,20 @@
       "mode": "lifetime rollup + local detail",
       "note": "Lifetime total comes from the Codex token activity screen; local SQLite supplies available daily detail.",
       "peak_tokens": 310000000,
-      "sessions": 14,
+      "sessions": 0,
       "tokens": 5300000000
     }
   ],
   "totals": {
     "active_days": 126,
     "current_streak": 2,
-    "favorite_model": "GPT-5.5",
+    "favorite_model": "Opus 4.8",
     "longest_streak": 20,
     "longest_task_seconds": 7560,
-    "messages": 8789,
+    "messages": 9076,
     "peak_tokens": 310000000,
-    "sessions": 34,
-    "tokens": 5345935822
+    "sessions": 21,
+    "tokens": 5346314286
   },
   "updated_at": "2026-06-14"
 }
