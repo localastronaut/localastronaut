@@ -52,6 +52,7 @@ class SourceStats:
     sessions: int = 0
     messages: int = 0
     daily_tokens: dict[str, int] = field(default_factory=dict)
+    daily_activity: dict[str, int] = field(default_factory=dict)
     model_tokens: Counter[str] = field(default_factory=Counter)
     favorite_model: str = ""
     active_days: int = 0
@@ -69,16 +70,24 @@ class SourceStats:
             for day, tokens in sorted(self.daily_tokens.items())
             if int(tokens) > 0
         }
+        if not self.daily_activity:
+            self.daily_activity = dict(self.daily_tokens)
+        self.daily_activity = {
+            day: int(value)
+            for day, value in sorted(self.daily_activity.items())
+            if int(value) > 0
+        }
         if not self.tokens:
             self.tokens = sum(self.daily_tokens.values())
         if not self.active_days:
-            self.active_days = len(self.daily_tokens)
+            self.active_days = len(self.daily_activity or self.daily_tokens)
         if not self.peak_tokens:
             self.peak_tokens = max(self.daily_tokens.values(), default=0)
         if self.model_tokens and not self.favorite_model:
             self.favorite_model = pretty_model(self.model_tokens.most_common(1)[0][0])
-        if self.daily_tokens:
-            current_streak, longest_streak = streaks(set(self.daily_tokens), today)
+        active_days = set(self.daily_activity) or set(self.daily_tokens)
+        if active_days:
+            current_streak, longest_streak = streaks(active_days, today)
             self.current_streak = max(self.current_streak, current_streak)
             self.longest_streak = max(self.longest_streak, longest_streak)
 
@@ -372,6 +381,10 @@ def load_manual(path: Path, today: dt.date) -> list[SourceStats]:
 
         for day, tokens in (item.get("daily_tokens") or {}).items():
             source.daily_tokens[str(day)] = source.daily_tokens.get(str(day), 0) + as_int(tokens)
+        for day, value in (item.get("daily_activity") or {}).items():
+            source.daily_activity[str(day)] = max(source.daily_activity.get(str(day), 0), as_int(value))
+        for day, value in expand_activity_grid(item.get("activity_grid")).items():
+            source.daily_activity[day] = max(source.daily_activity.get(day, 0), value)
         for model, tokens in (item.get("models") or {}).items():
             source.model_tokens[str(model)] += as_int(tokens)
 
@@ -379,6 +392,34 @@ def load_manual(path: Path, today: dt.date) -> list[SourceStats]:
         if source.tokens or source.daily_tokens or source.note:
             results.append(source)
     return results
+
+
+def expand_activity_grid(grid: Any) -> dict[str, int]:
+    if not isinstance(grid, dict):
+        return {}
+    start_raw = grid.get("start")
+    columns = grid.get("columns") or []
+    if not isinstance(start_raw, str) or not isinstance(columns, list):
+        return {}
+    try:
+        start = dt.date.fromisoformat(start_raw)
+    except ValueError:
+        return {}
+    levels = {str(key): as_int(value) for key, value in (grid.get("levels") or {}).items()}
+    if not levels:
+        levels = {"0": 0, "1": 25, "2": 50, "3": 75, "4": 100}
+
+    expanded: dict[str, int] = {}
+    for col, encoded in enumerate(columns):
+        if not isinstance(encoded, str):
+            continue
+        for row, char in enumerate(encoded):
+            value = levels.get(char, 0)
+            if value <= 0:
+                continue
+            day = start + dt.timedelta(days=col * 7 + row)
+            expanded[day.isoformat()] = value
+    return expanded
 
 
 def merge_sources(
@@ -413,25 +454,51 @@ def merge_sources(
         existing.model_tokens.update(manual.model_tokens)
         for day, tokens in manual.daily_tokens.items():
             existing.daily_tokens[day] = existing.daily_tokens.get(day, 0) + tokens
+        for day, value in manual.daily_activity.items():
+            existing.daily_activity[day] = max(existing.daily_activity.get(day, 0), value)
         existing.errors.extend(manual.errors)
         existing.finalize(today)
 
     return [sources_by_id[source_id] for source_id in ordered_ids]
 
 
+def recent_leader(sources: list[SourceStats], today: dt.date, days: int = 14) -> dict[str, Any]:
+    start = today - dt.timedelta(days=days - 1)
+    best: tuple[int, int, SourceStats | None] = (0, 0, None)
+    for source in sources:
+        active_count = 0
+        activity_total = 0
+        for offset in range(days):
+            day = (start + dt.timedelta(days=offset)).isoformat()
+            value = source.daily_activity.get(day, 0)
+            if value > 0:
+                active_count += 1
+                activity_total += value
+        if (active_count, activity_total) > (best[0], best[1]):
+            best = (active_count, activity_total, source)
+    source = best[2]
+    return {
+        "label": source.label if source else "n/a",
+        "days": best[0],
+        "window_days": days,
+    }
+
+
 def combine(sources: list[SourceStats], today: dt.date) -> dict[str, Any]:
     included = [source for source in sources if source.include_in_total]
     daily_totals: dict[str, int] = defaultdict(int)
     daily_by_source: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
+    activity_days: set[str] = set()
     model_tokens: Counter[str] = Counter()
 
     for source in included:
         model_tokens.update(source.model_tokens)
+        activity_days.update(source.daily_activity)
         for day, tokens in source.daily_tokens.items():
             daily_totals[day] += tokens
             daily_by_source[day][source.id] += tokens
 
-    active_days = set(day for day, tokens in daily_totals.items() if tokens > 0)
+    active_days = activity_days or set(day for day, tokens in daily_totals.items() if tokens > 0)
     current_streak, longest_streak = streaks(active_days, today)
     peak_daily = max(daily_totals.values(), default=0)
     peak_source = max((source.peak_tokens for source in included), default=0)
@@ -440,6 +507,7 @@ def combine(sources: list[SourceStats], today: dt.date) -> dict[str, Any]:
     longest_task_seconds = max((s.longest_task_seconds for s in included), default=0)
     if leader and leader.longest_task_seconds:
         longest_task_seconds = leader.longest_task_seconds
+    recent = recent_leader(included, today)
 
     return {
         "total_tokens": total_tokens,
@@ -452,6 +520,7 @@ def combine(sources: list[SourceStats], today: dt.date) -> dict[str, Any]:
         "longest_task_seconds": longest_task_seconds,
         "favorite_model": pretty_model(model_tokens.most_common(1)[0][0]) if model_tokens else "n/a",
         "leader": leader,
+        "recent_leader": recent,
         "daily_totals": dict(sorted(daily_totals.items())),
         "daily_by_source": {
             day: dict(values) for day, values in sorted(daily_by_source.items())
@@ -532,6 +601,79 @@ def build_heatmap(
     return "\n    ".join(months), "\n    ".join(rects), width, height
 
 
+def activity_color(source: SourceStats, value: int, max_value: int) -> str:
+    if value <= 0:
+        return EMPTY_CELL
+    if max_value <= 0:
+        return blend(EMPTY_CELL, source.color, 0.46)
+    intensity = 0.28 + 0.70 * (math.log1p(value) / math.log1p(max_value))
+    return blend(EMPTY_CELL, source.color, intensity)
+
+
+def build_activity_lanes(
+    sources: list[SourceStats], today: dt.date, cell: int = 9, gap: int = 3
+) -> tuple[str, int, int]:
+    step = cell + gap
+    label_w = 142
+    lane_h = 7 * step - gap
+    lane_gap = 18
+    week_start = today - dt.timedelta(days=today.weekday())
+    start = week_start - dt.timedelta(weeks=48)
+    columns = 49
+
+    month_x: dict[tuple[int, int], tuple[str, int]] = {}
+    for col in range(columns):
+        week = start + dt.timedelta(days=col * 7)
+        for row in range(7):
+            day = week + dt.timedelta(days=row)
+            if day > today:
+                continue
+            if day.day == 1 or (col == 0 and row == 0):
+                month_x.setdefault((day.year, day.month), (day.strftime("%b"), label_w + col * step))
+
+    months = [
+        f'<text x="{x}" y="-10" fill="{MUTED}" font-size="10" font-family="system-ui,sans-serif">{label}</text>'
+        for (_, _), (label, x) in sorted(month_x.items())
+    ]
+    lanes: list[str] = months
+    ordered = sorted(sources, key=lambda source: source.tokens, reverse=True)
+
+    for index, source in enumerate(ordered):
+        y0 = 12 + index * (lane_h + lane_gap)
+        max_value = max(source.daily_activity.values(), default=0)
+        lanes.append(
+            f'<text x="0" y="{y0 + 22}" fill="{TEXT}" font-size="12.5" '
+            f'font-weight="600" font-family="system-ui,sans-serif">{e(shorten(source.label, 18))}</text>'
+        )
+        lanes.append(
+            f'<text x="0" y="{y0 + 38}" fill="{MUTED}" font-size="10" '
+            f'font-family="system-ui,sans-serif">{fmt_n(source.tokens)} · {e(shorten(source.mode, 20))}</text>'
+        )
+
+        for col in range(columns):
+            week = start + dt.timedelta(days=col * 7)
+            for row in range(7):
+                day = week + dt.timedelta(days=row)
+                day_key = day.isoformat()
+                value = 0 if day > today else source.daily_activity.get(day_key, 0)
+                exact_tokens = source.daily_tokens.get(day_key, 0)
+                if exact_tokens:
+                    tip = f"{day_key}: {source.label} {fmt_n(exact_tokens)} tokens"
+                elif value:
+                    tip = f"{day_key}: {source.label} activity from historical visual rollup"
+                else:
+                    tip = f"{day_key}: no {source.label} activity"
+                lanes.append(
+                    f'<rect x="{label_w + col * step}" y="{y0 + row * step}" '
+                    f'width="{cell}" height="{cell}" rx="2" '
+                    f'fill="{activity_color(source, value, max_value)}"><title>{e(tip)}</title></rect>'
+                )
+
+    width = label_w + columns * step - gap
+    height = 12 + len(ordered) * lane_h + max(0, len(ordered) - 1) * lane_gap
+    return "\n    ".join(lanes), width, height
+
+
 def source_rows(sources: list[SourceStats], total: int, y: int, width: int, pad: int) -> str:
     rows: list[str] = []
     sorted_sources = sorted(
@@ -572,17 +714,23 @@ def stat_cards(combined: dict[str, Any], y: int, width: int, pad: int) -> str:
     leader_text = "n/a"
     if leader:
         leader_text = f"{leader.label} {pct(leader.tokens, combined['total_tokens'])}"
+    recent = combined["recent_leader"]
+    recent_text = "n/a"
+    if recent["days"]:
+        recent_text = f"{recent['label']} {recent['days']}/{recent['window_days']}d"
     items = [
         ("Total tokens", fmt_n(combined["total_tokens"])),
-        ("Leading system", shorten(leader_text, 18)),
+        ("Lifetime leader", shorten(leader_text, 18)),
+        ("Recent system", shorten(recent_text, 18)),
         ("Peak day", fmt_n(combined["peak_tokens"])),
         ("Longest task", fmt_duration(combined["longest_task_seconds"])),
         ("Current streak", f"{combined['current_streak']}d"),
         ("Longest streak", f"{combined['longest_streak']}d"),
+        ("Tracked days", f"{combined['active_days']}d"),
     ]
     gap = 8
-    cols = 3
-    card_h = 66
+    cols = 4
+    card_h = 62
     card_w = (width - 2 * pad - gap * (cols - 1)) // cols
     cards: list[str] = []
     for index, (label, value) in enumerate(items):
@@ -594,7 +742,7 @@ def stat_cards(combined: dict[str, Any], y: int, width: int, pad: int) -> str:
             f'fill="{CARD_BG}" stroke="{BORDER}" stroke-width="1"/>'
             f'<text x="{x + 13}" y="{cy + 22}" fill="{MUTED}" font-size="11.5" '
             f'font-family="system-ui,sans-serif">{e(label)}</text>'
-            f'<text x="{x + 13}" y="{cy + 49}" fill="{TEXT}" font-size="21" '
+            f'<text x="{x + 13}" y="{cy + 47}" fill="{TEXT}" font-size="19" '
             f'font-weight="700" font-family="system-ui,sans-serif">{e(value)}</text>'
         )
     return "\n  ".join(cards)
@@ -606,24 +754,15 @@ def generate_svg(
     width = 940
     pad = 24
     card_y = 68
-    cards_h = 66 * 2 + 8
+    cards_h = 62 * 2 + 8
     sources_y = card_y + cards_h + 44
     source_h = max(1, len(sources)) * 36
     heat_y = sources_y + source_h + 50
-    months, cells, hmap_w, hmap_h = build_heatmap(sources, combined, today)
-    footer_y = heat_y + hmap_h + 52
+    lanes_svg, lanes_w, lanes_h = build_activity_lanes(sources, today)
+    footer_y = heat_y + lanes_h + 64
     height = footer_y + 28
 
     source_row_svg = source_rows(sources, combined["total_tokens"], sources_y, width, pad)
-    legend = []
-    legend_x = pad + 142
-    for index, source in enumerate(sources[:5]):
-        lx = legend_x + index * 130
-        legend.append(
-            f'<circle cx="{lx}" cy="{heat_y - 19}" r="4" fill="{source.color}"/>'
-            f'<text x="{lx + 9}" y="{heat_y - 15}" fill="{MUTED}" font-size="10" '
-            f'font-family="system-ui,sans-serif">{e(shorten(source.label, 15))}</text>'
-        )
 
     generated_note = "local aggregate counters only; no prompts or responses published"
     return f'''<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" xmlns="http://www.w3.org/2000/svg">
@@ -638,14 +777,13 @@ def generate_svg(
   <text x="{pad}" y="{sources_y - 19}" fill="{MUTED}" font-size="12" font-family="system-ui,sans-serif">Source mix</text>
   {source_row_svg}
 
-  <text x="{pad}" y="{heat_y - 15}" fill="{MUTED}" font-size="12" font-family="system-ui,sans-serif">Daily activity</text>
-  {"".join(legend)}
+  <text x="{pad}" y="{heat_y - 15}" fill="{MUTED}" font-size="12" font-family="system-ui,sans-serif">Activity over time</text>
+  <text x="{width - pad}" y="{heat_y - 15}" fill="{DIM}" font-size="10.5" font-family="system-ui,sans-serif" text-anchor="end">separate lanes show tool shifts over time</text>
   <g transform="translate({pad},{heat_y + 8})">
-    {months}
-    {cells}
+    {lanes_svg}
   </g>
 
-  <text x="{pad}" y="{footer_y}" fill="{DIM}" font-size="11" font-family="system-ui,sans-serif">Cell color shows the dominant system per day; brightness shows total tokens.</text>
+  <text x="{pad}" y="{footer_y}" fill="{DIM}" font-size="11" font-family="system-ui,sans-serif">Codex historical lane uses the screenshot activity rollup when exact daily tokens are unavailable; local days update automatically.</text>
   <text x="{width - pad}" y="{footer_y}" fill="{DIM}" font-size="11" font-family="system-ui,sans-serif" text-anchor="end">{e(generated_note)}</text>
 </svg>'''
 
@@ -681,6 +819,7 @@ def write_summary(path: Path, sources: list[SourceStats], combined: dict[str, An
                 "include_in_total": source.include_in_total,
                 "note": source.note,
                 "errors": source.errors,
+                "daily_activity": source.daily_activity,
             }
             for source in sources
         ],
