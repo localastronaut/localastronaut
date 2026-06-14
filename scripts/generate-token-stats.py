@@ -752,89 +752,41 @@ def generate_svg(sources: list[SourceStats], combined: dict[str, Any],
 
     lanes_svg, _, lanes_h = activity_lanes(sources, today)
 
-    y_title = 36
-    y_sub = 56
-    y_badge = 74
-    badge_h = 30
-    y_hero_label = y_badge + badge_h + 30
-    y_hero_num = y_hero_label + 36
-    y_hero_sub = y_hero_num + 18
-    hero_left_w = 300
-    growth_x = pad + hero_left_w + 30
-    growth_w = inner - hero_left_w - 30
-    growth_y = y_hero_label - 6
-    growth_h = 64
-
-    y_share_label = y_hero_sub + 34
-    y_share = y_share_label + 14
-    share_h = len(sources) * 34
-
-    y_chip_label = y_share + share_h + 16
-    y_chips = y_chip_label + 8
-
-    y_lanes_label = y_chips + 48 + 30
-    y_lanes = y_lanes_label + 24
-
-    y_foot = y_lanes + lanes_h + 34
-    H = y_foot + 22
-
     fair = combined["fair_total"]
     lifetime = combined["lifetime_total"]
-    d0 = min(combined["daily_work_totals"], default=today.isoformat())
-    since = dt.date.fromisoformat(d0).strftime("%b %-d") if combined["daily_work_totals"] else "—"
+
+    # top band: all-time number (left) · most-used ranking (right)
+    y_meta = 26
+    top_y = 52
+    at_label_y = top_y + 6
+    at_num_y = top_y + 50
+    bars_x = pad + 296
+    bars_w = inner - 296
+    bars_y = top_y
+    share_h = len(sources) * 34
+
+    top_h = max(at_num_y - top_y + 8, share_h)
+    y_lanes = top_y + top_h + 36
+    H = y_lanes + lanes_h + pad
 
     p: list[str] = [
         f'<rect width="{W}" height="{H}" rx="14" fill="{BG}" stroke="{BORDER}"/>',
-        # header
-        f'<text x="{pad}" y="{y_title}" fill="{TEXT}" font-size="19" font-weight="700" '
-        f'font-family="{FONT}">⚡ What I build with</text>',
-        f'<text x="{W - pad}" y="{y_title - 12}" fill="{DIM}" font-size="11" '
-        f'font-family="{MONO}" text-anchor="end">@{e(username)}</text>',
-        f'<text x="{W - pad}" y="{y_title + 3}" fill="{DIM}" font-size="11" '
-        f'font-family="{MONO}" text-anchor="end">updated {today.isoformat()}</text>',
-        f'<text x="{pad}" y="{y_sub}" fill="{MUTED}" font-size="12.5" font-family="{FONT}">'
-        f'My AI usage for <tspan fill="{TEXT}" font-weight="600">writing code</tspan>'
-        f' — measured locally, not how I use these apps day to day.</text>',
-        # lifetime badge
-        f'<rect x="{pad}" y="{y_badge}" width="{inner}" height="{badge_h}" rx="8" '
-        f'fill="#0b2a22" stroke="#10a37f" stroke-opacity="0.4"/>',
-        f'<text x="{pad + 14}" y="{y_badge + 20}" fill="#34d399" font-size="13" '
-        f'font-weight="700" font-family="{FONT}">⚡ {fmt_n(lifetime)}+ tokens processed all-time'
-        f'<tspan fill="{MUTED}" font-weight="400" font-size="11">'
-        f'   ·   includes cache &amp; full history (Codex usage screen)</tspan></text>',
-        f'<text x="{W - pad - 14}" y="{y_badge + 20}" fill="{MUTED}" font-size="11" '
-        f'font-family="{MONO}" text-anchor="end">fair split below ↓</text>',
-        # hero total
-        f'<text x="{pad}" y="{y_hero_label}" fill="{MUTED}" font-size="11.5" '
-        f'font-family="{FONT}" letter-spacing="0.5">CODING TOKENS · COUNTED FAIRLY</text>',
-        f'<text x="{pad}" y="{y_hero_num}" fill="{TEXT}" font-size="42" font-weight="800" '
-        f'font-family="{FONT}">{fmt_n(fair)}</text>',
-        f'<text x="{pad}" y="{y_hero_sub}" fill="{MUTED}" font-size="11.5" font-family="{FONT}">'
-        f'{len(sources)} tools · {combined["active_days"]} active days · since {since}</text>',
-        growth_curve(combined["daily_work_totals"], growth_x, growth_y, growth_w, growth_h, today),
-        # share bars
-        f'<text x="{pad}" y="{y_share_label}" fill="{MUTED}" font-size="12" '
-        f'font-family="{FONT}">What I reach for — same count for every tool</text>',
-        share_bars(sources, fair, pad, y_share, inner),
-        # stat chips
-        f'<text x="{pad}" y="{y_chip_label}" fill="{MUTED}" font-size="12" font-family="{FONT}">'
-        f'All-time bests <tspan fill="{DIM}" font-size="10.5">· from each tool’s own usage history</tspan></text>',
-        stat_chips(combined, pad, y_chips, inner, pad),
-        # lanes
-        f'<text x="{pad}" y="{y_lanes_label}" fill="{MUTED}" font-size="12" '
-        f'font-family="{FONT}">Activity over time</text>',
-        f'<text x="{W - pad}" y="{y_lanes_label}" fill="{DIM}" font-size="10.5" '
-        f'font-family="{FONT}" text-anchor="end">each lane = one tool</text>',
+        # handle + freshness (top-right)
+        f'<text x="{W - pad}" y="{y_meta}" fill="{DIM}" font-size="11" font-family="{MONO}" '
+        f'text-anchor="end">@{e(username)} · updated {today.isoformat()}</text>',
+        # all-time tokens (left)
+        f'<text x="{pad}" y="{at_label_y}" fill="{MUTED}" font-size="11.5" letter-spacing="0.5" '
+        f'font-family="{FONT}">ALL-TIME TOKENS</text>',
+        f'<text x="{pad}" y="{at_num_y}" fill="{TEXT}" font-size="46" font-weight="800" '
+        f'font-family="{FONT}">{fmt_n(lifetime)}+</text>',
+        # currently most-used ranking (right)
+        share_bars(sources, fair, bars_x, bars_y, bars_w),
+        # activity timeline, one lane per tool (full width)
         f'<g transform="translate({pad},{y_lanes})">\n    {lanes_svg}\n  </g>',
-        # footer
-        f'<text x="{pad}" y="{y_foot}" fill="{DIM}" font-size="11" font-family="{FONT}">'
-        f'{e(fun_fact(fair))} — now go build something.</text>',
-        f'<text x="{W - pad}" y="{y_foot}" fill="{DIM}" font-size="10" font-family="{MONO}" '
-        f'text-anchor="end">aggregate counters only · no prompts published</text>',
     ]
     return (f'<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
             f'xmlns="http://www.w3.org/2000/svg" role="img" '
-            f'aria-label="AI coding token activity">\n  ' + "\n  ".join(p) + "\n</svg>")
+            f'aria-label="AI model token usage">\n  ' + "\n  ".join(p) + "\n</svg>")
 
 
 def write_summary(path: Path, sources: list[SourceStats], combined: dict[str, Any],
