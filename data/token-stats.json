@@ -55,7 +55,7 @@
       "claude": 358977
     },
     "2026-06-14": {
-      "claude": 1697054,
+      "claude": 1704266,
       "codex": 543334
     }
   },
@@ -75,7 +75,7 @@
     "2026-06-09": 648021,
     "2026-06-10": 15575,
     "2026-06-13": 358977,
-    "2026-06-14": 2240388
+    "2026-06-14": 2247600
   },
   "sources": [
     {
@@ -97,23 +97,23 @@
         "2026-06-09": 648021,
         "2026-06-10": 15575,
         "2026-06-13": 358977,
-        "2026-06-14": 1697054
+        "2026-06-14": 1704266
       },
       "errors": [],
       "favorite_model": "Opus 4.8",
       "id": "claude",
       "label": "Claude Code",
-      "lifetime_tokens": 47491781,
+      "lifetime_tokens": 47498993,
       "longest_streak": 10,
       "longest_task_seconds": 0,
       "mode": "live local",
       "note": "",
       "peak_tokens": 26622109,
       "sessions": 21,
-      "work_tokens": 47491781
+      "work_tokens": 47498993
     },
     {
-      "active_days": 9,
+      "active_days": 5,
       "current_streak": 2,
       "daily_work": {
         "2026-05-23": 1677611,
@@ -126,9 +126,7 @@
         "2026-06-01": 732646,
         "2026-06-14": 543334
       },
-      "errors": [
-        "/Users/brandon/.codex/sqlite/state_5.sqlite: unable to open database file"
-      ],
+      "errors": [],
       "favorite_model": "GPT-5.5",
       "id": "codex",
       "label": "Codex",
@@ -164,15 +162,15 @@
   "token_efficiency": {
     "building": 2,
     "shipped": 5,
-    "tokens_per_ship": 906747,
-    "tracked_tokens": 4533736
+    "tokens_per_ship": 908189,
+    "tracked_tokens": 4540948
   },
   "totals": {
     "active_days": 16,
     "current_streak": 2,
-    "fair_tokens": 73199502,
+    "fair_tokens": 73206714,
     "favorite_model": "Opus 4.8",
-    "lifetime_tokens": 5347510932,
+    "lifetime_tokens": 5347518144,
     "longest_streak": 20,
     "longest_task_seconds": 7560,
     "peak_tokens": 310000000,
