@@ -84,7 +84,7 @@
   "sources": [
     {
       "active_days": 17,
-      "current_streak": 3,
+      "current_streak": 0,
       "daily_work": {
         "2026-05-23": 597717,
         "2026-05-24": 633144,
@@ -172,7 +172,7 @@
   },
   "totals": {
     "active_days": 17,
-    "current_streak": 3,
+    "current_streak": 2,
     "fair_tokens": 73363605,
     "favorite_model": "Opus 4.8",
     "lifetime_tokens": 5347675035,
@@ -181,5 +181,5 @@
     "peak_tokens": 310000000,
     "sessions": 36
   },
-  "updated_at": "2026-06-16"
+  "updated_at": "2026-06-17"
 }
