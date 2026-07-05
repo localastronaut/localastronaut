@@ -65,7 +65,7 @@
       "claude": 270594
     },
     "2026-07-05": {
-      "claude": 242124
+      "claude": 271767
     }
   },
   "daily_work_totals": {
@@ -87,7 +87,7 @@
     "2026-06-14": 2247600,
     "2026-06-15": 156891,
     "2026-06-26": 270594,
-    "2026-07-05": 242124
+    "2026-07-05": 271767
   },
   "sources": [
     {
@@ -112,20 +112,20 @@
         "2026-06-14": 1704266,
         "2026-06-15": 156891,
         "2026-06-26": 270594,
-        "2026-07-05": 242124
+        "2026-07-05": 271767
       },
       "errors": [],
       "favorite_model": "Opus 4.8",
       "id": "claude",
       "label": "Claude Code",
-      "lifetime_tokens": 48168602,
+      "lifetime_tokens": 48198245,
       "longest_streak": 10,
       "longest_task_seconds": 0,
       "mode": "live local",
       "note": "",
       "peak_tokens": 26622109,
       "sessions": 24,
-      "work_tokens": 48168602
+      "work_tokens": 48198245
     },
     {
       "active_days": 5,
@@ -183,9 +183,9 @@
   "totals": {
     "active_days": 19,
     "current_streak": 1,
-    "fair_tokens": 73876323,
+    "fair_tokens": 73905966,
     "favorite_model": "Opus 4.8",
-    "lifetime_tokens": 5348187753,
+    "lifetime_tokens": 5348217396,
     "longest_streak": 20,
     "longest_task_seconds": 7560,
     "peak_tokens": 310000000,
