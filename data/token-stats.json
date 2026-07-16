@@ -22,7 +22,6 @@
       "codex": 5831628
     },
     "2026-05-31": {
-      "claude": 368367,
       "codex": 4533893
     },
     "2026-06-01": {
@@ -51,7 +50,10 @@
       "claude": 34474
     },
     "2026-07-15": {
-      "claude": 623833
+      "claude": 635873
+    },
+    "2026-07-16": {
+      "claude": 142852
     }
   },
   "daily_work_totals": {
@@ -62,7 +64,7 @@
     "2026-05-27": 3421449,
     "2026-05-29": 5759555,
     "2026-05-30": 5831628,
-    "2026-05-31": 4902260,
+    "2026-05-31": 4533893,
     "2026-06-01": 732646,
     "2026-06-10": 15575,
     "2026-06-13": 56044,
@@ -71,14 +73,14 @@
     "2026-06-26": 270594,
     "2026-07-05": 420283,
     "2026-07-14": 34474,
-    "2026-07-15": 623833
+    "2026-07-15": 635873,
+    "2026-07-16": 142852
   },
   "sources": [
     {
       "active_days": 9,
-      "current_streak": 2,
+      "current_streak": 3,
       "daily_work": {
-        "2026-05-31": 368367,
         "2026-06-10": 15575,
         "2026-06-13": 56044,
         "2026-06-14": 1704266,
@@ -86,20 +88,21 @@
         "2026-06-26": 270594,
         "2026-07-05": 420283,
         "2026-07-14": 34474,
-        "2026-07-15": 623833
+        "2026-07-15": 635873,
+        "2026-07-16": 142852
       },
       "errors": [],
       "favorite_model": "Opus 4.8",
       "id": "claude",
       "label": "Claude Code",
-      "lifetime_tokens": 3650327,
+      "lifetime_tokens": 3436852,
       "longest_streak": 3,
       "longest_task_seconds": 0,
       "mode": "live local",
       "note": "",
       "peak_tokens": 1704266,
-      "sessions": 14,
-      "work_tokens": 3650327
+      "sessions": 13,
+      "work_tokens": 3436852
     },
     {
       "active_days": 5,
@@ -155,15 +158,15 @@
     "tracked_tokens": 3552182
   },
   "totals": {
-    "active_days": 17,
-    "current_streak": 2,
-    "fair_tokens": 29358048,
+    "active_days": 18,
+    "current_streak": 3,
+    "fair_tokens": 29144573,
     "favorite_model": "GPT-5.5",
-    "lifetime_tokens": 5303669478,
+    "lifetime_tokens": 5303456003,
     "longest_streak": 20,
     "longest_task_seconds": 7560,
     "peak_tokens": 310000000,
-    "sessions": 29
+    "sessions": 28
   },
-  "updated_at": "2026-07-15"
+  "updated_at": "2026-07-16"
 }

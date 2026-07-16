@@ -1,11 +1,11 @@
 <svg width="940" height="479" viewBox="0 0 940 479" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI coding token-efficiency">
   <rect width="940" height="479" rx="14" fill="#0d1117" stroke="#30363d"/>
   <text x="28" y="24" fill="#7d8590" font-size="11" letter-spacing="0.5" font-family="system-ui,-apple-system,sans-serif">TOKEN-EFFICIENCY <tspan fill="#4b5563" letter-spacing="0">· tokens per public ship</tspan></text>
-  <text x="912" y="24" fill="#4b5563" font-size="11" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" text-anchor="end">@localastronaut · updated 2026-07-15</text>
+  <text x="912" y="24" fill="#4b5563" font-size="11" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" text-anchor="end">@localastronaut · updated 2026-07-16</text>
   <text x="28" y="64" fill="#e6edf3" font-size="38" font-weight="800" font-family="system-ui,-apple-system,sans-serif">710.4K<tspan fill="#7d8590" font-size="16" font-weight="500"> / ship</tspan></text>
   <text x="28" y="86" fill="#7d8590" font-size="11.5" font-family="system-ui,-apple-system,sans-serif">5 shipped · 2 building · <tspan fill="#4b5563">5.3B+ tokens all-time</tspan></text>
   <circle cx="363" cy="40" r="4.5" fill="#10a37f"/><text x="375" y="44" fill="#e6edf3" font-size="13.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">Codex<tspan fill="#4b5563" font-size="10.5" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,monospace"> · GPT-5.5</tspan></text><text x="912" y="44" fill="#7d8590" font-size="12" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" text-anchor="end">25.7M  ·  88%</text><rect x="358" y="53" width="554" height="9" rx="4.5" fill="#1c2128"/><rect x="358" y="53" width="554.0" height="9" rx="4.5" fill="#10a37f"/>
-  <circle cx="363" cy="74" r="4.5" fill="#d97757"/><text x="375" y="78" fill="#e6edf3" font-size="13.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">Claude Code<tspan fill="#4b5563" font-size="10.5" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,monospace"> · Opus 4.8</tspan></text><text x="912" y="78" fill="#7d8590" font-size="12" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" text-anchor="end">3.7M  ·  12%</text><rect x="358" y="87" width="554" height="9" rx="4.5" fill="#1c2128"/><rect x="358" y="87" width="78.7" height="9" rx="4.5" fill="#d97757"/>
+  <circle cx="363" cy="74" r="4.5" fill="#d97757"/><text x="375" y="78" fill="#e6edf3" font-size="13.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">Claude Code<tspan fill="#4b5563" font-size="10.5" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,monospace"> · Opus 4.8</tspan></text><text x="912" y="78" fill="#7d8590" font-size="12" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" text-anchor="end">3.4M  ·  12%</text><rect x="358" y="87" width="554" height="9" rx="4.5" fill="#1c2128"/><rect x="358" y="87" width="74.1" height="9" rx="4.5" fill="#d97757"/>
   <circle cx="363" cy="108" r="4.5" fill="#9ea7b3"/><text x="375" y="112" fill="#e6edf3" font-size="13.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">Grok<tspan fill="#4b5563" font-size="10.5" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,monospace"> · Grok Build</tspan></text><text x="912" y="112" fill="#7d8590" font-size="12" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" text-anchor="end">19.2K  ·  &lt;0.1%</text><rect x="358" y="121" width="554" height="9" rx="4.5" fill="#1c2128"/><rect x="358" y="121" width="3.0" height="9" rx="4.5" fill="#9ea7b3"/>
   <g transform="translate(28,166)">
     <text x="168" y="-9" fill="#7d8590" font-size="9.5" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">Sep</text>
@@ -359,7 +359,8 @@
     <rect x="708" y="10" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-13: no Codex</title></rect>
     <rect x="708" y="22" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-14: no Codex</title></rect>
     <rect x="708" y="34" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-15: no Codex</title></rect>
-    <circle cx="4" cy="114" r="4" fill="#d97757"/><text x="14" y="118" fill="#e6edf3" font-size="12.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">Claude Code</text><text x="14" y="134" fill="#7d8590" font-size="9.5" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">3.7M</text>
+    <rect x="708" y="46" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-16: no Codex</title></rect>
+    <circle cx="4" cy="114" r="4" fill="#d97757"/><text x="14" y="118" fill="#e6edf3" font-size="12.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">Claude Code</text><text x="14" y="134" fill="#7d8590" font-size="9.5" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">3.4M</text>
     <rect x="132" y="107" width="9" height="9" rx="2" fill="#1c2128"><title>2025-08-11: no Claude Code</title></rect>
     <rect x="132" y="119" width="9" height="9" rx="2" fill="#1c2128"><title>2025-08-12: no Claude Code</title></rect>
     <rect x="132" y="131" width="9" height="9" rx="2" fill="#1c2128"><title>2025-08-13: no Claude Code</title></rect>
@@ -653,7 +654,7 @@
     <rect x="624" y="143" width="9" height="9" rx="2" fill="#1c2128"><title>2026-05-28: no Claude Code</title></rect>
     <rect x="624" y="155" width="9" height="9" rx="2" fill="#1c2128"><title>2026-05-29: no Claude Code</title></rect>
     <rect x="624" y="167" width="9" height="9" rx="2" fill="#1c2128"><title>2026-05-30: no Claude Code</title></rect>
-    <rect x="624" y="179" width="9" height="9" rx="2" fill="#c76f53"><title>2026-05-31: Claude Code 368.4K tokens</title></rect>
+    <rect x="624" y="179" width="9" height="9" rx="2" fill="#1c2128"><title>2026-05-31: no Claude Code</title></rect>
     <rect x="636" y="107" width="9" height="9" rx="2" fill="#1c2128"><title>2026-06-01: no Claude Code</title></rect>
     <rect x="636" y="119" width="9" height="9" rx="2" fill="#1c2128"><title>2026-06-02: no Claude Code</title></rect>
     <rect x="636" y="131" width="9" height="9" rx="2" fill="#1c2128"><title>2026-06-03: no Claude Code</title></rect>
@@ -698,7 +699,8 @@
     <rect x="696" y="179" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-12: no Claude Code</title></rect>
     <rect x="708" y="107" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-13: no Claude Code</title></rect>
     <rect x="708" y="119" width="9" height="9" rx="2" fill="#b1654d"><title>2026-07-14: Claude Code 34.5K tokens</title></rect>
-    <rect x="708" y="131" width="9" height="9" rx="2" fill="#cc7154"><title>2026-07-15: Claude Code 623.8K tokens</title></rect>
+    <rect x="708" y="131" width="9" height="9" rx="2" fill="#cc7154"><title>2026-07-15: Claude Code 635.9K tokens</title></rect>
+    <rect x="708" y="143" width="9" height="9" rx="2" fill="#be6b50"><title>2026-07-16: Claude Code 142.9K tokens</title></rect>
     <circle cx="4" cy="211" r="4" fill="#9ea7b3"/><text x="14" y="215" fill="#e6edf3" font-size="12.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">Grok</text><text x="14" y="231" fill="#7d8590" font-size="9.5" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">19.2K</text>
     <rect x="132" y="204" width="9" height="9" rx="2" fill="#1c2128"><title>2025-08-11: no Grok</title></rect>
     <rect x="132" y="216" width="9" height="9" rx="2" fill="#1c2128"><title>2025-08-12: no Grok</title></rect>
@@ -1039,5 +1041,6 @@
     <rect x="708" y="204" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-13: no Grok</title></rect>
     <rect x="708" y="216" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-14: no Grok</title></rect>
     <rect x="708" y="228" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-15: no Grok</title></rect>
+    <rect x="708" y="240" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-16: no Grok</title></rect>
   </g>
 </svg>
