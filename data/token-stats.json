@@ -34,7 +34,7 @@
       "claude": 56044
     },
     "2026-06-14": {
-      "claude": 1704266,
+      "claude": 638909,
       "codex": 543334
     },
     "2026-06-15": {
@@ -53,7 +53,22 @@
       "claude": 635873
     },
     "2026-07-16": {
-      "claude": 143264
+      "claude": 147137
+    },
+    "2026-07-17": {
+      "claude": 27974
+    },
+    "2026-07-18": {
+      "claude": 134875
+    },
+    "2026-07-19": {
+      "claude": 33283
+    },
+    "2026-07-23": {
+      "claude": 26224
+    },
+    "2026-07-24": {
+      "claude": 1784198
     }
   },
   "daily_work_totals": {
@@ -68,41 +83,51 @@
     "2026-06-01": 732646,
     "2026-06-10": 15575,
     "2026-06-13": 56044,
-    "2026-06-14": 2247600,
+    "2026-06-14": 1182243,
     "2026-06-15": 156891,
     "2026-06-26": 270594,
     "2026-07-05": 420283,
     "2026-07-14": 34474,
     "2026-07-15": 635873,
-    "2026-07-16": 143264
+    "2026-07-16": 147137,
+    "2026-07-17": 27974,
+    "2026-07-18": 134875,
+    "2026-07-19": 33283,
+    "2026-07-23": 26224,
+    "2026-07-24": 1784198
   },
   "sources": [
     {
-      "active_days": 9,
-      "current_streak": 3,
+      "active_days": 14,
+      "current_streak": 2,
       "daily_work": {
         "2026-06-10": 15575,
         "2026-06-13": 56044,
-        "2026-06-14": 1704266,
+        "2026-06-14": 638909,
         "2026-06-15": 156891,
         "2026-06-26": 270594,
         "2026-07-05": 420283,
         "2026-07-14": 34474,
         "2026-07-15": 635873,
-        "2026-07-16": 143264
+        "2026-07-16": 147137,
+        "2026-07-17": 27974,
+        "2026-07-18": 134875,
+        "2026-07-19": 33283,
+        "2026-07-23": 26224,
+        "2026-07-24": 1784198
       },
       "errors": [],
-      "favorite_model": "Opus 4.8",
+      "favorite_model": "Fable 5",
       "id": "claude",
       "label": "Claude Code",
-      "lifetime_tokens": 3437264,
-      "longest_streak": 3,
+      "lifetime_tokens": 4382334,
+      "longest_streak": 6,
       "longest_task_seconds": 0,
       "mode": "live local",
       "note": "",
-      "peak_tokens": 1704266,
-      "sessions": 13,
-      "work_tokens": 3437264
+      "peak_tokens": 1784198,
+      "sessions": 19,
+      "work_tokens": 4382334
     },
     {
       "active_days": 5,
@@ -154,19 +179,19 @@
   "token_efficiency": {
     "building": 2,
     "shipped": 5,
-    "tokens_per_ship": 710436,
-    "tracked_tokens": 3552182
+    "tokens_per_ship": 707175,
+    "tracked_tokens": 3535876
   },
   "totals": {
-    "active_days": 18,
-    "current_streak": 3,
-    "fair_tokens": 29144985,
+    "active_days": 23,
+    "current_streak": 2,
+    "fair_tokens": 30090055,
     "favorite_model": "GPT-5.5",
-    "lifetime_tokens": 5303456415,
+    "lifetime_tokens": 5304401485,
     "longest_streak": 20,
     "longest_task_seconds": 7560,
     "peak_tokens": 310000000,
-    "sessions": 28
+    "sessions": 34
   },
-  "updated_at": "2026-07-16"
+  "updated_at": "2026-07-24"
 }
