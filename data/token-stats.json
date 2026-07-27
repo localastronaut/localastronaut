@@ -80,7 +80,7 @@
     },
     "2026-07-27": {
       "claude": 1170973,
-      "codex": 413324
+      "codex": 422188
     }
   },
   "daily_work_totals": {
@@ -109,7 +109,7 @@
     "2026-07-24": 1975857,
     "2026-07-25": 2238467,
     "2026-07-26": 1906361,
-    "2026-07-27": 1584297
+    "2026-07-27": 1593161
   },
   "sources": [
     {
@@ -162,7 +162,7 @@
         "2026-06-14": 543334,
         "2026-07-25": 259200,
         "2026-07-26": 90453,
-        "2026-07-27": 413324
+        "2026-07-27": 422188
       },
       "errors": [],
       "favorite_model": "GPT-5.5",
@@ -175,7 +175,7 @@
       "note": "Lifetime total comes from the Codex token activity screen; local SQLite supplies available daily detail.",
       "peak_tokens": 310000000,
       "sessions": 18,
-      "work_tokens": 26451547
+      "work_tokens": 26460411
     },
     {
       "active_days": 1,
@@ -206,7 +206,7 @@
   "totals": {
     "active_days": 26,
     "current_streak": 5,
-    "fair_tokens": 35927773,
+    "fair_tokens": 35936637,
     "favorite_model": "GPT-5.5",
     "lifetime_tokens": 5309476226,
     "longest_streak": 20,
