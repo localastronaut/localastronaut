@@ -34,7 +34,7 @@
       "claude": 56044
     },
     "2026-06-14": {
-      "claude": 638909,
+      "claude": 555843,
       "codex": 543334
     },
     "2026-06-15": {
@@ -68,7 +68,19 @@
       "claude": 26224
     },
     "2026-07-24": {
-      "claude": 1836817
+      "claude": 1975857
+    },
+    "2026-07-25": {
+      "claude": 1979267,
+      "codex": 259200
+    },
+    "2026-07-26": {
+      "claude": 1815908,
+      "codex": 90453
+    },
+    "2026-07-27": {
+      "claude": 1170973,
+      "codex": 413324
     }
   },
   "daily_work_totals": {
@@ -83,7 +95,7 @@
     "2026-06-01": 732646,
     "2026-06-10": 15575,
     "2026-06-13": 56044,
-    "2026-06-14": 1182243,
+    "2026-06-14": 1099177,
     "2026-06-15": 156891,
     "2026-06-26": 270594,
     "2026-07-05": 420283,
@@ -94,16 +106,19 @@
     "2026-07-18": 134875,
     "2026-07-19": 33283,
     "2026-07-23": 26224,
-    "2026-07-24": 1836817
+    "2026-07-24": 1975857,
+    "2026-07-25": 2238467,
+    "2026-07-26": 1906361,
+    "2026-07-27": 1584297
   },
   "sources": [
     {
-      "active_days": 14,
-      "current_streak": 2,
+      "active_days": 17,
+      "current_streak": 5,
       "daily_work": {
         "2026-06-10": 15575,
         "2026-06-13": 56044,
-        "2026-06-14": 638909,
+        "2026-06-14": 555843,
         "2026-06-15": 156891,
         "2026-06-26": 270594,
         "2026-07-05": 420283,
@@ -114,20 +129,23 @@
         "2026-07-18": 134875,
         "2026-07-19": 33283,
         "2026-07-23": 26224,
-        "2026-07-24": 1836817
+        "2026-07-24": 1975857,
+        "2026-07-25": 1979267,
+        "2026-07-26": 1815908,
+        "2026-07-27": 1170973
       },
       "errors": [],
-      "favorite_model": "Fable 5",
+      "favorite_model": "Opus 5",
       "id": "claude",
       "label": "Claude Code",
-      "lifetime_tokens": 4434953,
+      "lifetime_tokens": 9457075,
       "longest_streak": 6,
       "longest_task_seconds": 0,
       "mode": "live local",
       "note": "",
-      "peak_tokens": 1836817,
-      "sessions": 19,
-      "work_tokens": 4434953
+      "peak_tokens": 1979267,
+      "sessions": 37,
+      "work_tokens": 9457075
     },
     {
       "active_days": 5,
@@ -141,7 +159,10 @@
         "2026-05-30": 5831628,
         "2026-05-31": 4533893,
         "2026-06-01": 732646,
-        "2026-06-14": 543334
+        "2026-06-14": 543334,
+        "2026-07-25": 259200,
+        "2026-07-26": 90453,
+        "2026-07-27": 413324
       },
       "errors": [],
       "favorite_model": "GPT-5.5",
@@ -153,8 +174,8 @@
       "mode": "lifetime rollup + local detail",
       "note": "Lifetime total comes from the Codex token activity screen; local SQLite supplies available daily detail.",
       "peak_tokens": 310000000,
-      "sessions": 14,
-      "work_tokens": 25688570
+      "sessions": 18,
+      "work_tokens": 26451547
     },
     {
       "active_days": 1,
@@ -179,19 +200,19 @@
   "token_efficiency": {
     "building": 2,
     "shipped": 5,
-    "tokens_per_ship": 707175,
-    "tracked_tokens": 3535876
+    "tokens_per_ship": 690562,
+    "tracked_tokens": 3452810
   },
   "totals": {
-    "active_days": 23,
-    "current_streak": 2,
-    "fair_tokens": 30142674,
+    "active_days": 26,
+    "current_streak": 5,
+    "fair_tokens": 35927773,
     "favorite_model": "GPT-5.5",
-    "lifetime_tokens": 5304454104,
+    "lifetime_tokens": 5309476226,
     "longest_streak": 20,
     "longest_task_seconds": 7560,
     "peak_tokens": 310000000,
-    "sessions": 34
+    "sessions": 56
   },
-  "updated_at": "2026-07-24"
+  "updated_at": "2026-07-27"
 }
