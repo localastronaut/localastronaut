@@ -79,8 +79,8 @@
       "codex": 90453
     },
     "2026-07-27": {
-      "claude": 1170973,
-      "codex": 422188
+      "claude": 2059112,
+      "codex": 964555
     }
   },
   "daily_work_totals": {
@@ -109,7 +109,7 @@
     "2026-07-24": 1975857,
     "2026-07-25": 2238467,
     "2026-07-26": 1906361,
-    "2026-07-27": 1593161
+    "2026-07-27": 3023667
   },
   "sources": [
     {
@@ -132,20 +132,20 @@
         "2026-07-24": 1975857,
         "2026-07-25": 1979267,
         "2026-07-26": 1815908,
-        "2026-07-27": 1170973
+        "2026-07-27": 2059112
       },
       "errors": [],
       "favorite_model": "Opus 5",
       "id": "claude",
       "label": "Claude Code",
-      "lifetime_tokens": 9457075,
+      "lifetime_tokens": 10345214,
       "longest_streak": 6,
       "longest_task_seconds": 0,
       "mode": "live local",
       "note": "",
-      "peak_tokens": 1979267,
-      "sessions": 37,
-      "work_tokens": 9457075
+      "peak_tokens": 2059112,
+      "sessions": 39,
+      "work_tokens": 10345214
     },
     {
       "active_days": 5,
@@ -162,7 +162,7 @@
         "2026-06-14": 543334,
         "2026-07-25": 259200,
         "2026-07-26": 90453,
-        "2026-07-27": 422188
+        "2026-07-27": 964555
       },
       "errors": [],
       "favorite_model": "GPT-5.5",
@@ -174,8 +174,8 @@
       "mode": "lifetime rollup + local detail",
       "note": "Lifetime total comes from the Codex token activity screen; local SQLite supplies available daily detail.",
       "peak_tokens": 310000000,
-      "sessions": 18,
-      "work_tokens": 26460411
+      "sessions": 22,
+      "work_tokens": 27002778
     },
     {
       "active_days": 1,
@@ -206,13 +206,13 @@
   "totals": {
     "active_days": 26,
     "current_streak": 5,
-    "fair_tokens": 35936637,
+    "fair_tokens": 37367143,
     "favorite_model": "GPT-5.5",
-    "lifetime_tokens": 5309476226,
+    "lifetime_tokens": 5310364365,
     "longest_streak": 20,
     "longest_task_seconds": 7560,
     "peak_tokens": 310000000,
-    "sessions": 56
+    "sessions": 62
   },
   "updated_at": "2026-07-27"
 }
