@@ -83,8 +83,12 @@
       "codex": 964555
     },
     "2026-07-28": {
-      "claude": 3130168,
+      "claude": 3644868,
       "codex": 56513
+    },
+    "2026-07-29": {
+      "claude": 326461,
+      "codex": 56187
     }
   },
   "daily_work_totals": {
@@ -114,12 +118,13 @@
     "2026-07-25": 2238467,
     "2026-07-26": 1906361,
     "2026-07-27": 4025435,
-    "2026-07-28": 3186681
+    "2026-07-28": 3701381,
+    "2026-07-29": 382648
   },
   "sources": [
     {
-      "active_days": 18,
-      "current_streak": 6,
+      "active_days": 19,
+      "current_streak": 7,
       "daily_work": {
         "2026-06-10": 15575,
         "2026-06-13": 56044,
@@ -138,20 +143,21 @@
         "2026-07-25": 1979267,
         "2026-07-26": 1815908,
         "2026-07-27": 3060880,
-        "2026-07-28": 3130168
+        "2026-07-28": 3644868,
+        "2026-07-29": 326461
       },
       "errors": [],
       "favorite_model": "Opus 5",
       "id": "claude",
       "label": "Claude Code",
-      "lifetime_tokens": 14477150,
-      "longest_streak": 6,
+      "lifetime_tokens": 15318311,
+      "longest_streak": 7,
       "longest_task_seconds": 0,
       "mode": "live local",
       "note": "",
-      "peak_tokens": 3130168,
-      "sessions": 45,
-      "work_tokens": 14477150
+      "peak_tokens": 3644868,
+      "sessions": 46,
+      "work_tokens": 15318311
     },
     {
       "active_days": 5,
@@ -169,7 +175,8 @@
         "2026-07-25": 259200,
         "2026-07-26": 90453,
         "2026-07-27": 964555,
-        "2026-07-28": 56513
+        "2026-07-28": 56513,
+        "2026-07-29": 56187
       },
       "errors": [],
       "favorite_model": "GPT-5.5",
@@ -181,8 +188,8 @@
       "mode": "lifetime rollup + local detail",
       "note": "Lifetime total comes from the Codex token activity screen; local SQLite supplies available daily detail.",
       "peak_tokens": 310000000,
-      "sessions": 23,
-      "work_tokens": 27059291
+      "sessions": 24,
+      "work_tokens": 27115478
     },
     {
       "active_days": 1,
@@ -207,19 +214,19 @@
   "token_efficiency": {
     "building": 2,
     "shipped": 5,
-    "tokens_per_ship": 690562,
-    "tracked_tokens": 3452810
+    "tokens_per_ship": 699327,
+    "tracked_tokens": 3496635
   },
   "totals": {
-    "active_days": 27,
-    "current_streak": 6,
-    "fair_tokens": 41555592,
+    "active_days": 28,
+    "current_streak": 7,
+    "fair_tokens": 42452940,
     "favorite_model": "GPT-5.5",
-    "lifetime_tokens": 5314496301,
+    "lifetime_tokens": 5315337462,
     "longest_streak": 20,
     "longest_task_seconds": 7560,
     "peak_tokens": 310000000,
-    "sessions": 69
+    "sessions": 71
   },
-  "updated_at": "2026-07-28"
+  "updated_at": "2026-07-29"
 }
