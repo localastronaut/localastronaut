@@ -87,8 +87,8 @@
       "codex": 56513
     },
     "2026-07-29": {
-      "claude": 326881,
-      "codex": 56187
+      "claude": 1490524,
+      "codex": 542917
     }
   },
   "daily_work_totals": {
@@ -119,7 +119,7 @@
     "2026-07-26": 1906361,
     "2026-07-27": 4025435,
     "2026-07-28": 3701381,
-    "2026-07-29": 383068
+    "2026-07-29": 2033441
   },
   "sources": [
     {
@@ -144,20 +144,20 @@
         "2026-07-26": 1815908,
         "2026-07-27": 3060880,
         "2026-07-28": 3644868,
-        "2026-07-29": 326881
+        "2026-07-29": 1490524
       },
       "errors": [],
       "favorite_model": "Opus 5",
       "id": "claude",
       "label": "Claude Code",
-      "lifetime_tokens": 15318731,
+      "lifetime_tokens": 16482374,
       "longest_streak": 7,
       "longest_task_seconds": 0,
       "mode": "live local",
       "note": "",
       "peak_tokens": 3644868,
-      "sessions": 46,
-      "work_tokens": 15318731
+      "sessions": 47,
+      "work_tokens": 16482374
     },
     {
       "active_days": 5,
@@ -176,7 +176,7 @@
         "2026-07-26": 90453,
         "2026-07-27": 964555,
         "2026-07-28": 56513,
-        "2026-07-29": 56187
+        "2026-07-29": 542917
       },
       "errors": [],
       "favorite_model": "GPT-5.5",
@@ -188,8 +188,8 @@
       "mode": "lifetime rollup + local detail",
       "note": "Lifetime total comes from the Codex token activity screen; local SQLite supplies available daily detail.",
       "peak_tokens": 310000000,
-      "sessions": 24,
-      "work_tokens": 27115478
+      "sessions": 28,
+      "work_tokens": 27602208
     },
     {
       "active_days": 1,
@@ -220,13 +220,13 @@
   "totals": {
     "active_days": 28,
     "current_streak": 7,
-    "fair_tokens": 42453360,
+    "fair_tokens": 44103733,
     "favorite_model": "GPT-5.5",
-    "lifetime_tokens": 5315337882,
+    "lifetime_tokens": 5316501525,
     "longest_streak": 20,
     "longest_task_seconds": 7560,
     "peak_tokens": 310000000,
-    "sessions": 71
+    "sessions": 76
   },
   "updated_at": "2026-07-29"
 }
