@@ -111,8 +111,8 @@
       "codex": 1676982
     },
     "2026-08-05": {
-      "claude": 324146,
-      "codex": 235649
+      "claude": 470489,
+      "codex": 356993
     }
   },
   "daily_work_totals": {
@@ -150,7 +150,7 @@
     "2026-08-02": 1785854,
     "2026-08-03": 1061185,
     "2026-08-04": 7159285,
-    "2026-08-05": 559795
+    "2026-08-05": 827482
   },
   "sources": [
     {
@@ -182,20 +182,20 @@
         "2026-08-02": 1785854,
         "2026-08-03": 799355,
         "2026-08-04": 5482303,
-        "2026-08-05": 324146
+        "2026-08-05": 470489
       },
       "errors": [],
       "favorite_model": "Fable 5",
       "id": "claude",
       "label": "Claude Code",
-      "lifetime_tokens": 33363206,
+      "lifetime_tokens": 33509549,
       "longest_streak": 14,
       "longest_task_seconds": 0,
       "mode": "live local",
       "note": "",
       "peak_tokens": 5786943,
       "sessions": 70,
-      "work_tokens": 33363206
+      "work_tokens": 33509549
     },
     {
       "active_days": 5,
@@ -217,7 +217,7 @@
         "2026-07-29": 959201,
         "2026-08-03": 261830,
         "2026-08-04": 1676982,
-        "2026-08-05": 235649
+        "2026-08-05": 356993
       },
       "errors": [],
       "favorite_model": "GPT-5.5",
@@ -229,8 +229,8 @@
       "mode": "lifetime rollup + local detail",
       "note": "Lifetime total comes from the Codex token activity screen; local SQLite supplies available daily detail.",
       "peak_tokens": 310000000,
-      "sessions": 36,
-      "work_tokens": 30192953
+      "sessions": 37,
+      "work_tokens": 30314297
     },
     {
       "active_days": 1,
@@ -255,19 +255,19 @@
   "token_efficiency": {
     "building": 2,
     "shipped": 5,
-    "tokens_per_ship": 914776,
-    "tracked_tokens": 4573884
+    "tokens_per_ship": 921662,
+    "tracked_tokens": 4608314
   },
   "totals": {
     "active_days": 35,
     "current_streak": 14,
-    "fair_tokens": 63575310,
+    "fair_tokens": 63842997,
     "favorite_model": "GPT-5.5",
-    "lifetime_tokens": 5333382357,
+    "lifetime_tokens": 5333528700,
     "longest_streak": 20,
     "longest_task_seconds": 7560,
     "peak_tokens": 310000000,
-    "sessions": 107
+    "sessions": 108
   },
   "updated_at": "2026-08-05"
 }
