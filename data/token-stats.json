@@ -107,8 +107,11 @@
       "codex": 261830
     },
     "2026-08-04": {
-      "claude": 5474768,
+      "claude": 5482303,
       "codex": 1676982
+    },
+    "2026-08-05": {
+      "claude": 211044
     }
   },
   "daily_work_totals": {
@@ -145,12 +148,13 @@
     "2026-08-01": 102016,
     "2026-08-02": 1785854,
     "2026-08-03": 1061185,
-    "2026-08-04": 7151750
+    "2026-08-04": 7159285,
+    "2026-08-05": 211044
   },
   "sources": [
     {
-      "active_days": 25,
-      "current_streak": 13,
+      "active_days": 26,
+      "current_streak": 14,
       "daily_work": {
         "2026-06-10": 15575,
         "2026-06-13": 56044,
@@ -176,20 +180,21 @@
         "2026-08-01": 102016,
         "2026-08-02": 1785854,
         "2026-08-03": 799355,
-        "2026-08-04": 5474768
+        "2026-08-04": 5482303,
+        "2026-08-05": 211044
       },
       "errors": [],
       "favorite_model": "Fable 5",
       "id": "claude",
       "label": "Claude Code",
-      "lifetime_tokens": 33031525,
-      "longest_streak": 13,
+      "lifetime_tokens": 33250104,
+      "longest_streak": 14,
       "longest_task_seconds": 0,
       "mode": "live local",
       "note": "",
       "peak_tokens": 5786943,
-      "sessions": 68,
-      "work_tokens": 33031525
+      "sessions": 70,
+      "work_tokens": 33250104
     },
     {
       "active_days": 5,
@@ -248,19 +253,19 @@
   "token_efficiency": {
     "building": 2,
     "shipped": 5,
-    "tokens_per_ship": 891377,
-    "tracked_tokens": 4456888
+    "tokens_per_ship": 905458,
+    "tracked_tokens": 4527290
   },
   "totals": {
-    "active_days": 34,
-    "current_streak": 13,
-    "fair_tokens": 63007980,
+    "active_days": 35,
+    "current_streak": 14,
+    "fair_tokens": 63226559,
     "favorite_model": "GPT-5.5",
-    "lifetime_tokens": 5333050676,
+    "lifetime_tokens": 5333269255,
     "longest_streak": 20,
     "longest_task_seconds": 7560,
     "peak_tokens": 310000000,
-    "sessions": 105
+    "sessions": 107
   },
   "updated_at": "2026-08-05"
 }
