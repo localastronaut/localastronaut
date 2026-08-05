@@ -111,7 +111,7 @@
       "codex": 1676982
     },
     "2026-08-05": {
-      "claude": 932966,
+      "claude": 952854,
       "codex": 356993
     }
   },
@@ -150,7 +150,7 @@
     "2026-08-02": 1785854,
     "2026-08-03": 1061185,
     "2026-08-04": 7159285,
-    "2026-08-05": 1289959
+    "2026-08-05": 1309847
   },
   "sources": [
     {
@@ -182,20 +182,20 @@
         "2026-08-02": 1785854,
         "2026-08-03": 799355,
         "2026-08-04": 5482303,
-        "2026-08-05": 932966
+        "2026-08-05": 952854
       },
       "errors": [],
       "favorite_model": "Fable 5",
       "id": "claude",
       "label": "Claude Code",
-      "lifetime_tokens": 33972026,
+      "lifetime_tokens": 33991914,
       "longest_streak": 14,
       "longest_task_seconds": 0,
       "mode": "live local",
       "note": "",
       "peak_tokens": 5786943,
       "sessions": 70,
-      "work_tokens": 33972026
+      "work_tokens": 33991914
     },
     {
       "active_days": 5,
@@ -261,9 +261,9 @@
   "totals": {
     "active_days": 35,
     "current_streak": 14,
-    "fair_tokens": 64305474,
+    "fair_tokens": 64325362,
     "favorite_model": "GPT-5.5",
-    "lifetime_tokens": 5333991177,
+    "lifetime_tokens": 5334011065,
     "longest_streak": 20,
     "longest_task_seconds": 7560,
     "peak_tokens": 310000000,
