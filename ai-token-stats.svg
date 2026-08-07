@@ -4,8 +4,8 @@
   <text x="912" y="24" fill="#4b5563" font-size="11" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" text-anchor="end">@localastronaut · updated 2026-08-07</text>
   <text x="28" y="64" fill="#e6edf3" font-size="38" font-weight="800" font-family="system-ui,-apple-system,sans-serif">1.3M<tspan fill="#7d8590" font-size="16" font-weight="500"> / ship</tspan></text>
   <text x="28" y="86" fill="#7d8590" font-size="11.5" font-family="system-ui,-apple-system,sans-serif">5 shipped · 2 building · <tspan fill="#4b5563">5.3B+ tokens all-time</tspan></text>
-  <circle cx="363" cy="40" r="4.5" fill="#d97757"/><text x="375" y="44" fill="#e6edf3" font-size="13.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">Claude Code<tspan fill="#4b5563" font-size="10.5" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,monospace"> · Opus 5</tspan></text><text x="912" y="44" fill="#7d8590" font-size="12" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" text-anchor="end">40.5M  ·  57%</text><rect x="358" y="53" width="554" height="9" rx="4.5" fill="#1c2128"/><rect x="358" y="53" width="554.0" height="9" rx="4.5" fill="#d97757"/>
-  <circle cx="363" cy="74" r="4.5" fill="#10a37f"/><text x="375" y="78" fill="#e6edf3" font-size="13.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">Codex<tspan fill="#4b5563" font-size="10.5" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,monospace"> · GPT-5.5</tspan></text><text x="912" y="78" fill="#7d8590" font-size="12" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" text-anchor="end">30.3M  ·  43%</text><rect x="358" y="87" width="554" height="9" rx="4.5" fill="#1c2128"/><rect x="358" y="87" width="414.8" height="9" rx="4.5" fill="#10a37f"/>
+  <circle cx="363" cy="40" r="4.5" fill="#d97757"/><text x="375" y="44" fill="#e6edf3" font-size="13.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">Claude Code<tspan fill="#4b5563" font-size="10.5" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,monospace"> · Fable 5</tspan></text><text x="912" y="44" fill="#7d8590" font-size="12" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" text-anchor="end">42.1M  ·  58%</text><rect x="358" y="53" width="554" height="9" rx="4.5" fill="#1c2128"/><rect x="358" y="53" width="554.0" height="9" rx="4.5" fill="#d97757"/>
+  <circle cx="363" cy="74" r="4.5" fill="#10a37f"/><text x="375" y="78" fill="#e6edf3" font-size="13.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">Codex<tspan fill="#4b5563" font-size="10.5" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,monospace"> · GPT-5.5</tspan></text><text x="912" y="78" fill="#7d8590" font-size="12" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" text-anchor="end">30.3M  ·  42%</text><rect x="358" y="87" width="554" height="9" rx="4.5" fill="#1c2128"/><rect x="358" y="87" width="399.2" height="9" rx="4.5" fill="#10a37f"/>
   <circle cx="363" cy="108" r="4.5" fill="#9ea7b3"/><text x="375" y="112" fill="#e6edf3" font-size="13.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">Grok<tspan fill="#4b5563" font-size="10.5" font-weight="400" font-family="ui-monospace,SFMono-Regular,Menlo,monospace"> · Grok Build</tspan></text><text x="912" y="112" fill="#7d8590" font-size="12" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" text-anchor="end">19.2K  ·  &lt;0.1%</text><rect x="358" y="121" width="554" height="9" rx="4.5" fill="#1c2128"/><rect x="358" y="121" width="3.0" height="9" rx="4.5" fill="#9ea7b3"/>
   <g transform="translate(28,166)">
     <text x="132" y="-9" fill="#7d8590" font-size="9.5" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">Sep</text>
@@ -362,7 +362,7 @@
     <rect x="708" y="34" width="9" height="9" rx="2" fill="#1c2128"><title>2026-08-05: Codex 357.0K tokens</title></rect>
     <rect x="708" y="46" width="9" height="9" rx="2" fill="#1c2128"><title>2026-08-06: no Codex</title></rect>
     <rect x="708" y="58" width="9" height="9" rx="2" fill="#1c2128"><title>2026-08-07: no Codex</title></rect>
-    <circle cx="4" cy="114" r="4" fill="#d97757"/><text x="14" y="118" fill="#e6edf3" font-size="12.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">Claude Code</text><text x="14" y="134" fill="#7d8590" font-size="9.5" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">40.5M</text>
+    <circle cx="4" cy="114" r="4" fill="#d97757"/><text x="14" y="118" fill="#e6edf3" font-size="12.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">Claude Code</text><text x="14" y="134" fill="#7d8590" font-size="9.5" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">42.1M</text>
     <rect x="132" y="107" width="9" height="9" rx="2" fill="#1c2128"><title>2025-09-01: no Claude Code</title></rect>
     <rect x="132" y="119" width="9" height="9" rx="2" fill="#1c2128"><title>2025-09-02: no Claude Code</title></rect>
     <rect x="132" y="131" width="9" height="9" rx="2" fill="#1c2128"><title>2025-09-03: no Claude Code</title></rect>
@@ -645,12 +645,12 @@
     <rect x="600" y="179" width="9" height="9" rx="2" fill="#1c2128"><title>2026-06-07: no Claude Code</title></rect>
     <rect x="612" y="107" width="9" height="9" rx="2" fill="#1c2128"><title>2026-06-08: no Claude Code</title></rect>
     <rect x="612" y="119" width="9" height="9" rx="2" fill="#1c2128"><title>2026-06-09: no Claude Code</title></rect>
-    <rect x="612" y="131" width="9" height="9" rx="2" fill="#a25e49"><title>2026-06-10: Claude Code 15.6K tokens</title></rect>
+    <rect x="612" y="131" width="9" height="9" rx="2" fill="#a15e49"><title>2026-06-10: Claude Code 15.6K tokens</title></rect>
     <rect x="612" y="143" width="9" height="9" rx="2" fill="#1c2128"><title>2026-06-11: no Claude Code</title></rect>
     <rect x="612" y="155" width="9" height="9" rx="2" fill="#1c2128"><title>2026-06-12: no Claude Code</title></rect>
-    <rect x="612" y="167" width="9" height="9" rx="2" fill="#ad634c"><title>2026-06-13: Claude Code 56.0K tokens</title></rect>
-    <rect x="612" y="179" width="9" height="9" rx="2" fill="#c06c51"><title>2026-06-14: Claude Code 555.8K tokens</title></rect>
-    <rect x="624" y="107" width="9" height="9" rx="2" fill="#b5674e"><title>2026-06-15: Claude Code 156.9K tokens</title></rect>
+    <rect x="612" y="167" width="9" height="9" rx="2" fill="#ac624c"><title>2026-06-13: Claude Code 56.0K tokens</title></rect>
+    <rect x="612" y="179" width="9" height="9" rx="2" fill="#bf6b50"><title>2026-06-14: Claude Code 555.8K tokens</title></rect>
+    <rect x="624" y="107" width="9" height="9" rx="2" fill="#b4664e"><title>2026-06-15: Claude Code 156.9K tokens</title></rect>
     <rect x="624" y="119" width="9" height="9" rx="2" fill="#1c2128"><title>2026-06-16: no Claude Code</title></rect>
     <rect x="624" y="131" width="9" height="9" rx="2" fill="#1c2128"><title>2026-06-17: no Claude Code</title></rect>
     <rect x="624" y="143" width="9" height="9" rx="2" fill="#1c2128"><title>2026-06-18: no Claude Code</title></rect>
@@ -661,7 +661,7 @@
     <rect x="636" y="119" width="9" height="9" rx="2" fill="#1c2128"><title>2026-06-23: no Claude Code</title></rect>
     <rect x="636" y="131" width="9" height="9" rx="2" fill="#1c2128"><title>2026-06-24: no Claude Code</title></rect>
     <rect x="636" y="143" width="9" height="9" rx="2" fill="#1c2128"><title>2026-06-25: no Claude Code</title></rect>
-    <rect x="636" y="155" width="9" height="9" rx="2" fill="#ba694f"><title>2026-06-26: Claude Code 270.6K tokens</title></rect>
+    <rect x="636" y="155" width="9" height="9" rx="2" fill="#b9684f"><title>2026-06-26: Claude Code 270.6K tokens</title></rect>
     <rect x="636" y="167" width="9" height="9" rx="2" fill="#1c2128"><title>2026-06-27: no Claude Code</title></rect>
     <rect x="636" y="179" width="9" height="9" rx="2" fill="#1c2128"><title>2026-06-28: no Claude Code</title></rect>
     <rect x="648" y="107" width="9" height="9" rx="2" fill="#1c2128"><title>2026-06-29: no Claude Code</title></rect>
@@ -670,7 +670,7 @@
     <rect x="648" y="143" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-02: no Claude Code</title></rect>
     <rect x="648" y="155" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-03: no Claude Code</title></rect>
     <rect x="648" y="167" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-04: no Claude Code</title></rect>
-    <rect x="648" y="179" width="9" height="9" rx="2" fill="#be6b50"><title>2026-07-05: Claude Code 420.3K tokens</title></rect>
+    <rect x="648" y="179" width="9" height="9" rx="2" fill="#bd6a50"><title>2026-07-05: Claude Code 420.3K tokens</title></rect>
     <rect x="660" y="107" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-06: no Claude Code</title></rect>
     <rect x="660" y="119" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-07: no Claude Code</title></rect>
     <rect x="660" y="131" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-08: no Claude Code</title></rect>
@@ -679,31 +679,31 @@
     <rect x="660" y="167" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-11: no Claude Code</title></rect>
     <rect x="660" y="179" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-12: no Claude Code</title></rect>
     <rect x="672" y="107" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-13: no Claude Code</title></rect>
-    <rect x="672" y="119" width="9" height="9" rx="2" fill="#a9614b"><title>2026-07-14: Claude Code 34.5K tokens</title></rect>
-    <rect x="672" y="131" width="9" height="9" rx="2" fill="#c16c51"><title>2026-07-15: Claude Code 635.9K tokens</title></rect>
-    <rect x="672" y="143" width="9" height="9" rx="2" fill="#b5674e"><title>2026-07-16: Claude Code 147.1K tokens</title></rect>
-    <rect x="672" y="155" width="9" height="9" rx="2" fill="#a7604b"><title>2026-07-17: Claude Code 28.0K tokens</title></rect>
-    <rect x="672" y="167" width="9" height="9" rx="2" fill="#b4664e"><title>2026-07-18: Claude Code 134.9K tokens</title></rect>
-    <rect x="672" y="179" width="9" height="9" rx="2" fill="#a8614b"><title>2026-07-19: Claude Code 33.3K tokens</title></rect>
+    <rect x="672" y="119" width="9" height="9" rx="2" fill="#a8614b"><title>2026-07-14: Claude Code 34.5K tokens</title></rect>
+    <rect x="672" y="131" width="9" height="9" rx="2" fill="#c06c51"><title>2026-07-15: Claude Code 635.9K tokens</title></rect>
+    <rect x="672" y="143" width="9" height="9" rx="2" fill="#b4664e"><title>2026-07-16: Claude Code 147.1K tokens</title></rect>
+    <rect x="672" y="155" width="9" height="9" rx="2" fill="#a6604a"><title>2026-07-17: Claude Code 28.0K tokens</title></rect>
+    <rect x="672" y="167" width="9" height="9" rx="2" fill="#b3664e"><title>2026-07-18: Claude Code 134.9K tokens</title></rect>
+    <rect x="672" y="179" width="9" height="9" rx="2" fill="#a7604b"><title>2026-07-19: Claude Code 33.3K tokens</title></rect>
     <rect x="684" y="107" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-20: no Claude Code</title></rect>
     <rect x="684" y="119" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-21: no Claude Code</title></rect>
     <rect x="684" y="131" width="9" height="9" rx="2" fill="#1c2128"><title>2026-07-22: no Claude Code</title></rect>
-    <rect x="684" y="143" width="9" height="9" rx="2" fill="#a6604a"><title>2026-07-23: Claude Code 26.2K tokens</title></rect>
-    <rect x="684" y="155" width="9" height="9" rx="2" fill="#cb7053"><title>2026-07-24: Claude Code 2.0M tokens</title></rect>
-    <rect x="684" y="167" width="9" height="9" rx="2" fill="#cb7053"><title>2026-07-25: Claude Code 2.0M tokens</title></rect>
-    <rect x="684" y="179" width="9" height="9" rx="2" fill="#ca7053"><title>2026-07-26: Claude Code 1.8M tokens</title></rect>
-    <rect x="696" y="107" width="9" height="9" rx="2" fill="#d07355"><title>2026-07-27: Claude Code 3.7M tokens</title></rect>
-    <rect x="696" y="119" width="9" height="9" rx="2" fill="#d27455"><title>2026-07-28: Claude Code 4.5M tokens</title></rect>
-    <rect x="696" y="131" width="9" height="9" rx="2" fill="#cb7154"><title>2026-07-29: Claude Code 2.2M tokens</title></rect>
-    <rect x="696" y="143" width="9" height="9" rx="2" fill="#bd6a50"><title>2026-07-30: Claude Code 406.7K tokens</title></rect>
-    <rect x="696" y="155" width="9" height="9" rx="2" fill="#d57556"><title>2026-07-31: Claude Code 7.0M tokens</title></rect>
-    <rect x="696" y="167" width="9" height="9" rx="2" fill="#b2654d"><title>2026-08-01: Claude Code 102.0K tokens</title></rect>
-    <rect x="696" y="179" width="9" height="9" rx="2" fill="#ca7053"><title>2026-08-02: Claude Code 1.8M tokens</title></rect>
-    <rect x="708" y="107" width="9" height="9" rx="2" fill="#c36d52"><title>2026-08-03: Claude Code 799.4K tokens</title></rect>
-    <rect x="708" y="119" width="9" height="9" rx="2" fill="#d37456"><title>2026-08-04: Claude Code 5.5M tokens</title></rect>
-    <rect x="708" y="131" width="9" height="9" rx="2" fill="#cf7254"><title>2026-08-05: Claude Code 3.2M tokens</title></rect>
-    <rect x="708" y="143" width="9" height="9" rx="2" fill="#ce7254"><title>2026-08-06: Claude Code 2.8M tokens</title></rect>
-    <rect x="708" y="155" width="9" height="9" rx="2" fill="#b9684f"><title>2026-08-07: Claude Code 245.4K tokens</title></rect>
+    <rect x="684" y="143" width="9" height="9" rx="2" fill="#a5604a"><title>2026-07-23: Claude Code 26.2K tokens</title></rect>
+    <rect x="684" y="155" width="9" height="9" rx="2" fill="#c97053"><title>2026-07-24: Claude Code 2.0M tokens</title></rect>
+    <rect x="684" y="167" width="9" height="9" rx="2" fill="#c97053"><title>2026-07-25: Claude Code 2.0M tokens</title></rect>
+    <rect x="684" y="179" width="9" height="9" rx="2" fill="#c97053"><title>2026-07-26: Claude Code 1.8M tokens</title></rect>
+    <rect x="696" y="107" width="9" height="9" rx="2" fill="#ce7254"><title>2026-07-27: Claude Code 3.7M tokens</title></rect>
+    <rect x="696" y="119" width="9" height="9" rx="2" fill="#d07355"><title>2026-07-28: Claude Code 4.5M tokens</title></rect>
+    <rect x="696" y="131" width="9" height="9" rx="2" fill="#ca7053"><title>2026-07-29: Claude Code 2.2M tokens</title></rect>
+    <rect x="696" y="143" width="9" height="9" rx="2" fill="#bc6a50"><title>2026-07-30: Claude Code 406.7K tokens</title></rect>
+    <rect x="696" y="155" width="9" height="9" rx="2" fill="#d57556"><title>2026-07-31: Claude Code 8.2M tokens</title></rect>
+    <rect x="696" y="167" width="9" height="9" rx="2" fill="#b1654d"><title>2026-08-01: Claude Code 102.0K tokens</title></rect>
+    <rect x="696" y="179" width="9" height="9" rx="2" fill="#c97053"><title>2026-08-02: Claude Code 1.8M tokens</title></rect>
+    <rect x="708" y="107" width="9" height="9" rx="2" fill="#c26c51"><title>2026-08-03: Claude Code 799.4K tokens</title></rect>
+    <rect x="708" y="119" width="9" height="9" rx="2" fill="#d27455"><title>2026-08-04: Claude Code 5.5M tokens</title></rect>
+    <rect x="708" y="131" width="9" height="9" rx="2" fill="#cd7254"><title>2026-08-05: Claude Code 3.2M tokens</title></rect>
+    <rect x="708" y="143" width="9" height="9" rx="2" fill="#cd7154"><title>2026-08-06: Claude Code 3.0M tokens</title></rect>
+    <rect x="708" y="155" width="9" height="9" rx="2" fill="#be6b50"><title>2026-08-07: Claude Code 482.6K tokens</title></rect>
     <circle cx="4" cy="211" r="4" fill="#9ea7b3"/><text x="14" y="215" fill="#e6edf3" font-size="12.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">Grok</text><text x="14" y="231" fill="#7d8590" font-size="9.5" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">19.2K</text>
     <rect x="132" y="204" width="9" height="9" rx="2" fill="#1c2128"><title>2025-09-01: no Grok</title></rect>
     <rect x="132" y="216" width="9" height="9" rx="2" fill="#1c2128"><title>2025-09-02: no Grok</title></rect>
