@@ -127,7 +127,7 @@
       "claude": 2248517
     },
     "2026-08-10": {
-      "claude": 2829688,
+      "claude": 2993416,
       "codex": 249619
     }
   },
@@ -171,7 +171,7 @@
     "2026-08-07": 907702,
     "2026-08-08": 270645,
     "2026-08-09": 2248517,
-    "2026-08-10": 3079307
+    "2026-08-10": 3243035
   },
   "sources": [
     {
@@ -208,20 +208,20 @@
         "2026-08-07": 907702,
         "2026-08-08": 270645,
         "2026-08-09": 2248517,
-        "2026-08-10": 2829688
+        "2026-08-10": 2993416
       },
       "errors": [],
       "favorite_model": "Opus 5",
       "id": "claude",
       "label": "Claude Code",
-      "lifetime_tokens": 53363496,
+      "lifetime_tokens": 53527224,
       "longest_streak": 19,
       "longest_task_seconds": 0,
       "mode": "live local",
       "note": "",
       "peak_tokens": 8345958,
       "sessions": 112,
-      "work_tokens": 53363496
+      "work_tokens": 53527224
     },
     {
       "active_days": 5,
@@ -288,9 +288,9 @@
   "totals": {
     "active_days": 40,
     "current_streak": 19,
-    "fair_tokens": 83946563,
+    "fair_tokens": 84110291,
     "favorite_model": "GPT-5.5",
-    "lifetime_tokens": 5353382647,
+    "lifetime_tokens": 5353546375,
     "longest_streak": 20,
     "longest_task_seconds": 7560,
     "peak_tokens": 310000000,
