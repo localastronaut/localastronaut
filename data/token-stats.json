@@ -131,7 +131,11 @@
       "codex": 249619
     },
     "2026-08-11": {
-      "claude": 1916132
+      "claude": 1916921
+    },
+    "2026-08-12": {
+      "claude": 194336,
+      "codex": 316935
     }
   },
   "daily_work_totals": {
@@ -175,12 +179,13 @@
     "2026-08-08": 270645,
     "2026-08-09": 2248517,
     "2026-08-10": 3261473,
-    "2026-08-11": 1916132
+    "2026-08-11": 1916921,
+    "2026-08-12": 511271
   },
   "sources": [
     {
-      "active_days": 32,
-      "current_streak": 20,
+      "active_days": 33,
+      "current_streak": 21,
       "daily_work": {
         "2026-06-10": 15575,
         "2026-06-13": 56044,
@@ -213,20 +218,21 @@
         "2026-08-08": 270645,
         "2026-08-09": 2248517,
         "2026-08-10": 3011854,
-        "2026-08-11": 1916132
+        "2026-08-11": 1916921,
+        "2026-08-12": 194336
       },
       "errors": [],
       "favorite_model": "Fable 5",
       "id": "claude",
       "label": "Claude Code",
-      "lifetime_tokens": 55461794,
-      "longest_streak": 20,
+      "lifetime_tokens": 55656919,
+      "longest_streak": 21,
       "longest_task_seconds": 0,
       "mode": "live local",
       "note": "",
       "peak_tokens": 8345958,
-      "sessions": 114,
-      "work_tokens": 55461794
+      "sessions": 115,
+      "work_tokens": 55656919
     },
     {
       "active_days": 5,
@@ -249,7 +255,8 @@
         "2026-08-03": 261830,
         "2026-08-04": 1676982,
         "2026-08-05": 356993,
-        "2026-08-10": 249619
+        "2026-08-10": 249619,
+        "2026-08-12": 316935
       },
       "errors": [],
       "favorite_model": "GPT-5.5",
@@ -261,8 +268,8 @@
       "mode": "lifetime rollup + local detail",
       "note": "Lifetime total comes from the Codex token activity screen; local SQLite supplies available daily detail.",
       "peak_tokens": 310000000,
-      "sessions": 38,
-      "work_tokens": 30563916
+      "sessions": 39,
+      "work_tokens": 30880851
     },
     {
       "active_days": 1,
@@ -287,19 +294,19 @@
   "token_efficiency": {
     "building": 2,
     "shipped": 5,
-    "tokens_per_ship": 1811518,
-    "tracked_tokens": 9057594
+    "tokens_per_ship": 1827456,
+    "tracked_tokens": 9137282
   },
   "totals": {
-    "active_days": 41,
-    "current_streak": 20,
-    "fair_tokens": 86044861,
+    "active_days": 42,
+    "current_streak": 21,
+    "fair_tokens": 86556921,
     "favorite_model": "Fable 5",
-    "lifetime_tokens": 5355480945,
-    "longest_streak": 20,
+    "lifetime_tokens": 5355676070,
+    "longest_streak": 21,
     "longest_task_seconds": 7560,
     "peak_tokens": 310000000,
-    "sessions": 153
+    "sessions": 155
   },
   "updated_at": "2026-08-12"
 }
