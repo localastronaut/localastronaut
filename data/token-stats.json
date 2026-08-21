@@ -149,7 +149,19 @@
       "claude": 1121258
     },
     "2026-08-18": {
-      "claude": 91777
+      "claude": 261958
+    },
+    "2026-08-19": {
+      "claude": 922573,
+      "codex": 196610
+    },
+    "2026-08-20": {
+      "claude": 210250,
+      "codex": 344175
+    },
+    "2026-08-21": {
+      "claude": 302933,
+      "codex": 15433
     }
   },
   "daily_work_totals": {
@@ -198,12 +210,15 @@
     "2026-08-13": 1426919,
     "2026-08-14": 2250064,
     "2026-08-15": 1121258,
-    "2026-08-18": 91777
+    "2026-08-18": 261958,
+    "2026-08-19": 1119183,
+    "2026-08-20": 554425,
+    "2026-08-21": 318366
   },
   "sources": [
     {
-      "active_days": 37,
-      "current_streak": 1,
+      "active_days": 40,
+      "current_streak": 4,
       "daily_work": {
         "2026-06-10": 15575,
         "2026-06-13": 56044,
@@ -241,20 +256,23 @@
         "2026-08-13": 303260,
         "2026-08-14": 2045007,
         "2026-08-15": 1121258,
-        "2026-08-18": 91777
+        "2026-08-18": 261958,
+        "2026-08-19": 922573,
+        "2026-08-20": 210250,
+        "2026-08-21": 302933
       },
       "errors": [],
       "favorite_model": "Fable 5",
       "id": "claude",
       "label": "Claude Code",
-      "lifetime_tokens": 59238632,
+      "lifetime_tokens": 60844569,
       "longest_streak": 24,
       "longest_task_seconds": 0,
       "mode": "live local",
       "note": "",
       "peak_tokens": 8345958,
-      "sessions": 129,
-      "work_tokens": 59238632
+      "sessions": 135,
+      "work_tokens": 60844569
     },
     {
       "active_days": 5,
@@ -280,7 +298,10 @@
         "2026-08-10": 249619,
         "2026-08-12": 316935,
         "2026-08-13": 1123659,
-        "2026-08-14": 205057
+        "2026-08-14": 205057,
+        "2026-08-19": 196610,
+        "2026-08-20": 344175,
+        "2026-08-21": 15433
       },
       "errors": [],
       "favorite_model": "GPT-5.5",
@@ -292,8 +313,8 @@
       "mode": "lifetime rollup + local detail",
       "note": "Lifetime total comes from the Codex token activity screen; local SQLite supplies available daily detail.",
       "peak_tokens": 310000000,
-      "sessions": 39,
-      "work_tokens": 32209567
+      "sessions": 43,
+      "work_tokens": 32765785
     },
     {
       "active_days": 1,
@@ -322,15 +343,15 @@
     "tracked_tokens": 9137282
   },
   "totals": {
-    "active_days": 46,
-    "current_streak": 1,
-    "fair_tokens": 91467350,
+    "active_days": 49,
+    "current_streak": 4,
+    "fair_tokens": 93629505,
     "favorite_model": "Fable 5",
-    "lifetime_tokens": 5359257783,
+    "lifetime_tokens": 5360863720,
     "longest_streak": 24,
     "longest_task_seconds": 7560,
     "peak_tokens": 310000000,
-    "sessions": 169
+    "sessions": 179
   },
-  "updated_at": "2026-08-18"
+  "updated_at": "2026-08-21"
 }
