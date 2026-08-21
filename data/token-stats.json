@@ -160,8 +160,8 @@
       "codex": 344175
     },
     "2026-08-21": {
-      "claude": 302933,
-      "codex": 15433
+      "claude": 456763,
+      "codex": 45564
     }
   },
   "daily_work_totals": {
@@ -213,7 +213,7 @@
     "2026-08-18": 261958,
     "2026-08-19": 1119183,
     "2026-08-20": 554425,
-    "2026-08-21": 318366
+    "2026-08-21": 502327
   },
   "sources": [
     {
@@ -259,20 +259,20 @@
         "2026-08-18": 261958,
         "2026-08-19": 922573,
         "2026-08-20": 210250,
-        "2026-08-21": 302933
+        "2026-08-21": 456763
       },
       "errors": [],
       "favorite_model": "Fable 5",
       "id": "claude",
       "label": "Claude Code",
-      "lifetime_tokens": 60844569,
+      "lifetime_tokens": 60998399,
       "longest_streak": 24,
       "longest_task_seconds": 0,
       "mode": "live local",
       "note": "",
       "peak_tokens": 8345958,
       "sessions": 135,
-      "work_tokens": 60844569
+      "work_tokens": 60998399
     },
     {
       "active_days": 5,
@@ -301,7 +301,7 @@
         "2026-08-14": 205057,
         "2026-08-19": 196610,
         "2026-08-20": 344175,
-        "2026-08-21": 15433
+        "2026-08-21": 45564
       },
       "errors": [],
       "favorite_model": "GPT-5.5",
@@ -314,7 +314,7 @@
       "note": "Lifetime total comes from the Codex token activity screen; local SQLite supplies available daily detail.",
       "peak_tokens": 310000000,
       "sessions": 43,
-      "work_tokens": 32765785
+      "work_tokens": 32795916
     },
     {
       "active_days": 1,
@@ -345,9 +345,9 @@
   "totals": {
     "active_days": 49,
     "current_streak": 4,
-    "fair_tokens": 93629505,
+    "fair_tokens": 93813466,
     "favorite_model": "Fable 5",
-    "lifetime_tokens": 5360863720,
+    "lifetime_tokens": 5361017550,
     "longest_streak": 24,
     "longest_task_seconds": 7560,
     "peak_tokens": 310000000,
