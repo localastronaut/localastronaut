@@ -706,7 +706,7 @@
     <rect x="708" y="143" width="9" height="9" rx="2" fill="#a55f4a"><title>2026-10-22: Claude Code 24.7K tokens</title></rect>
     <rect x="708" y="155" width="9" height="9" rx="2" fill="#a6604a"><title>2026-10-23: Claude Code 29.6K tokens</title></rect>
     <rect x="708" y="167" width="9" height="9" rx="2" fill="#a45f4a"><title>2026-10-24: Claude Code 22.8K tokens</title></rect>
-    <rect x="708" y="179" width="9" height="9" rx="2" fill="#c97053"><title>2026-10-25: Claude Code 2.0M tokens</title></rect>
+    <rect x="708" y="179" width="9" height="9" rx="2" fill="#ca7053"><title>2026-10-25: Claude Code 2.0M tokens</title></rect>
     <circle cx="4" cy="211" r="4" fill="#9ea7b3"/><text x="14" y="215" fill="#e6edf3" font-size="12.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">Grok</text><text x="14" y="231" fill="#7d8590" font-size="9.5" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">19.2K</text>
     <rect x="132" y="204" width="9" height="9" rx="2" fill="#1c2128"><title>2025-11-17: no Grok</title></rect>
     <rect x="132" y="216" width="9" height="9" rx="2" fill="#1c2128"><title>2025-11-18: no Grok</title></rect>
