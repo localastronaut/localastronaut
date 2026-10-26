@@ -249,8 +249,8 @@
       "claude": 4588128
     },
     "2026-10-26": {
-      "claude": 1712005,
-      "codex": 315500
+      "claude": 1797071,
+      "codex": 361254
     }
   },
   "daily_work_totals": {
@@ -331,7 +331,7 @@
     "2026-10-23": 29611,
     "2026-10-24": 22810,
     "2026-10-25": 4588128,
-    "2026-10-26": 2027505
+    "2026-10-26": 2158325
   },
   "sources": [
     {
@@ -406,20 +406,20 @@
         "2026-10-23": 29611,
         "2026-10-24": 22810,
         "2026-10-25": 4588128,
-        "2026-10-26": 1712005
+        "2026-10-26": 1797071
       },
       "errors": [],
       "favorite_model": "Fable 5",
       "id": "claude",
       "label": "Claude Code",
-      "lifetime_tokens": 70381893,
+      "lifetime_tokens": 70466959,
       "longest_streak": 24,
       "longest_task_seconds": 0,
       "mode": "live local",
       "note": "",
       "peak_tokens": 8345958,
       "sessions": 207,
-      "work_tokens": 70381893
+      "work_tokens": 70466959
     },
     {
       "active_days": 5,
@@ -450,7 +450,7 @@
         "2026-08-20": 344175,
         "2026-08-21": 45564,
         "2026-08-22": 71496,
-        "2026-10-26": 315500
+        "2026-10-26": 361254
       },
       "errors": [],
       "favorite_model": "GPT-5.5",
@@ -463,7 +463,7 @@
       "note": "Lifetime total comes from the Codex token activity screen; local SQLite supplies available daily detail.",
       "peak_tokens": 310000000,
       "sessions": 48,
-      "work_tokens": 33182912
+      "work_tokens": 33228666
     },
     {
       "active_days": 1,
@@ -488,15 +488,15 @@
   "token_efficiency": {
     "building": 2,
     "shipped": 5,
-    "tokens_per_ship": 2800568,
-    "tracked_tokens": 14002841
+    "tokens_per_ship": 2815859,
+    "tracked_tokens": 14079297
   },
   "totals": {
     "active_days": 78,
     "current_streak": 7,
-    "fair_tokens": 103583956,
+    "fair_tokens": 103714776,
     "favorite_model": "Fable 5",
-    "lifetime_tokens": 5370401044,
+    "lifetime_tokens": 5370486110,
     "longest_streak": 24,
     "longest_task_seconds": 7560,
     "peak_tokens": 310000000,
