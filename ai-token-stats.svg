@@ -356,7 +356,7 @@
     <rect x="696" y="58" width="9" height="9" rx="2" fill="#1c2128"><title>2026-10-23: no Codex</title></rect>
     <rect x="696" y="70" width="9" height="9" rx="2" fill="#1c2128"><title>2026-10-24: no Codex</title></rect>
     <rect x="696" y="82" width="9" height="9" rx="2" fill="#1c2128"><title>2026-10-25: no Codex</title></rect>
-    <rect x="708" y="10" width="9" height="9" rx="2" fill="#1c2128"><title>2026-10-26: Codex 305.7K tokens</title></rect>
+    <rect x="708" y="10" width="9" height="9" rx="2" fill="#1c2128"><title>2026-10-26: Codex 315.5K tokens</title></rect>
     <circle cx="4" cy="114" r="4" fill="#d97757"/><text x="14" y="118" fill="#e6edf3" font-size="12.5" font-weight="600" font-family="system-ui,-apple-system,sans-serif">Claude Code</text><text x="14" y="134" fill="#7d8590" font-size="9.5" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">70.4M</text>
     <rect x="132" y="107" width="9" height="9" rx="2" fill="#1c2128"><title>2025-11-24: no Claude Code</title></rect>
     <rect x="132" y="119" width="9" height="9" rx="2" fill="#1c2128"><title>2025-11-25: no Claude Code</title></rect>
