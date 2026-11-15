@@ -252,7 +252,7 @@
       "claude": 1900005
     },
     "2026-11-15": {
-      "claude": 430812
+      "claude": 495424
     }
   },
   "daily_work_totals": {
@@ -339,7 +339,7 @@
     "2026-11-12": 81039,
     "2026-11-13": 2555337,
     "2026-11-14": 1900005,
-    "2026-11-15": 430812
+    "2026-11-15": 495424
   },
   "sources": [
     {
@@ -428,20 +428,20 @@
         "2026-11-12": 81039,
         "2026-11-13": 2414516,
         "2026-11-14": 1900005,
-        "2026-11-15": 430812
+        "2026-11-15": 495424
       },
       "errors": [],
       "favorite_model": "Fable 5",
       "id": "claude",
       "label": "Claude Code",
-      "lifetime_tokens": 80712888,
+      "lifetime_tokens": 80777500,
       "longest_streak": 24,
       "longest_task_seconds": 0,
       "mode": "live local",
       "note": "",
       "peak_tokens": 8345958,
       "sessions": 233,
-      "work_tokens": 80712888
+      "work_tokens": 80777500
     },
     {
       "active_days": 5,
@@ -492,9 +492,9 @@
   "totals": {
     "active_days": 84,
     "current_streak": 9,
-    "fair_tokens": 81508044,
+    "fair_tokens": 81572656,
     "favorite_model": "Fable 5",
-    "lifetime_tokens": 5380732039,
+    "lifetime_tokens": 5380796651,
     "longest_streak": 24,
     "longest_task_seconds": 7560,
     "peak_tokens": 310000000,
