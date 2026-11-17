@@ -255,7 +255,10 @@
       "claude": 31115390
     },
     "2026-11-16": {
-      "claude": 3842948
+      "claude": 3949459
+    },
+    "2026-11-17": {
+      "claude": 8623521
     }
   },
   "daily_work_totals": {
@@ -343,12 +346,13 @@
     "2026-11-13": 15896997,
     "2026-11-14": 9730515,
     "2026-11-15": 31115390,
-    "2026-11-16": 3842948
+    "2026-11-16": 3949459,
+    "2026-11-17": 8623521
   },
   "sources": [
     {
-      "active_days": 84,
-      "current_streak": 11,
+      "active_days": 85,
+      "current_streak": 12,
       "daily_work": {
         "2026-06-10": 15575,
         "2026-06-13": 56044,
@@ -433,20 +437,21 @@
         "2026-11-13": 15756176,
         "2026-11-14": 9730515,
         "2026-11-15": 31115390,
-        "2026-11-16": 3842948
+        "2026-11-16": 3949459,
+        "2026-11-17": 8623521
       },
       "errors": [],
       "favorite_model": "Fable 5 2",
       "id": "claude",
       "label": "Claude Code",
-      "lifetime_tokens": 137121046,
+      "lifetime_tokens": 145851078,
       "longest_streak": 24,
       "longest_task_seconds": 0,
       "mode": "live local",
       "note": "",
       "peak_tokens": 31115390,
-      "sessions": 311,
-      "work_tokens": 137121046
+      "sessions": 383,
+      "work_tokens": 145851078
     },
     {
       "active_days": 5,
@@ -491,19 +496,19 @@
   "token_efficiency": {
     "building": 2,
     "shipped": 5,
-    "tokens_per_ship": 2431614,
-    "tracked_tokens": 12158070
+    "tokens_per_ship": 4093243,
+    "tracked_tokens": 20466218
   },
   "totals": {
-    "active_days": 85,
-    "current_streak": 11,
-    "fair_tokens": 137916202,
+    "active_days": 86,
+    "current_streak": 12,
+    "fair_tokens": 146646234,
     "favorite_model": "Fable 5 2",
-    "lifetime_tokens": 5437140197,
+    "lifetime_tokens": 5445870229,
     "longest_streak": 24,
     "longest_task_seconds": 7560,
     "peak_tokens": 310000000,
-    "sessions": 313
+    "sessions": 385
   },
-  "updated_at": "2026-11-16"
+  "updated_at": "2026-11-17"
 }
